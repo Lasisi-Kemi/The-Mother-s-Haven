@@ -271,8 +271,8 @@ body  {
 }
 
 .flex-content-containerd-text-link p {
-    width: 185px;
-    padding: 21px 46px;
+    width: 190px;
+    padding: 21px 47px;
     border-radius: 8px;
     border: 1px solid var(--signuptextcolor);
 }
