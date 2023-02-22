@@ -1,0 +1,12 @@
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mothercolor: rgba(11, 92, 211, 1);
+    --editcolor: rgba(212, 61, 132, 1);
+    --blackcolor: rgba(20, 16, 16, 1);
+    --signuptextcolor: rgba(13, 110, 253, 1);
+
+}
