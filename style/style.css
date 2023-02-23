@@ -513,3 +513,21 @@ body  {
     display: flex;
     justify-content: space-between;
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#backToTop i {
+    cursor: pointer;
+    padding: 10px 13px;
+    font-size: 14px;
+    color: var(--primaryColor);
+    background-color: #fff;
+}
+#backToTop i:hover {
+    color: #fff;
+    background-color: var(--childcolor);
+    transition: 2s;
+}
