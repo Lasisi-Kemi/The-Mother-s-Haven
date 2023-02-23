@@ -27,6 +27,10 @@ body  {
 
 }
 
+.header {
+    background-color: var(--whitecolor);
+}
+
 .max_width {
     width: 100%;
     max-width: var(--maxwidth);
@@ -34,9 +38,19 @@ body  {
 }
 
 .nav-bar-tmh {
-    padding: 34px 0px 23px 0px;
+    /*padding: 34px 0px 23px 0px;*/
     display: flex;
     justify-content: space-between;
+}
+
+.nav-bar-tmh-logpc {
+    background-image: url(../assess/tmp_b9f54d42-a566-4b9a-9d32-6a7cbf15a49f\ 1.png);
+    background-size: cover;
+    height: 98px;
+    width: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nav-bar-tmh-logo {
@@ -61,6 +75,7 @@ body  {
 
 .nav-bar-tmh-links {
     display: flex;
+    align-items: center;
 }
 
 .nav-bar-tmh-links ul {
@@ -93,7 +108,7 @@ body  {
 
 }
 
-.container {
+.containera {
     background-image: url(../assess/Rectangle\ 7.png);
     background-repeat: no-repeat;
     background-size: cover;
