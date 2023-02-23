@@ -17,6 +17,9 @@ body  {
     --graycolor: rgba(79, 79, 79, 1);
     --signuptextcolor: rgba(13, 110, 253, 1);
     --footerblackcolor: rgba(32, 32, 32, 1);
+    --errorcolor: rgba(226, 41, 41, 1);   
+    --inputcolor: rgba(79, 79, 79, 0.2);
+    --logincolor: rgba(170, 49, 105, 1);
     --maxwidth: 1240px;
     --fontfamily: 'Montserrat', sans-serif;
     --fontfamily2: 'Poppins', sans-serif;
@@ -40,12 +43,16 @@ body  {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.nav-bar-tmh-logo a {
     font-family: var(--fontfamily);
     font-size: 24px;
     font-weight: 500;
     line-height: 29px;
     letter-spacing: 0.1em;
     color: var(--mothercolor);
+    text-decoration: none;
 }
 
 .nav-bar-tmh-logo span {
@@ -168,6 +175,7 @@ body  {
 
 .containerc {
     background-color: var(--sectionc);
+    position: relative;
 }
 
 .container-c-text {
@@ -232,6 +240,21 @@ body  {
     letter-spacing: 0.1em;
 }
 
+.group-love {
+    background-image: url(../assess/Group.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 152.65609744934912px;
+    width: 171.52224735629517px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.containerd {
+    position: relative;
+}
+
 .flex-content-containerd {
     display: flex;
 
@@ -240,8 +263,9 @@ body  {
 .flex-content-containerd-picture {
     background-image: url(../assess/pexels-william-fortunato-6393377\ 2.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    width: 100%;
     flex-basis: 50%;
 }
 
@@ -273,7 +297,7 @@ body  {
 
 .flex-content-containerd-text-link p {
     width: 190px;
-    padding: 21px 47px;
+    padding: 21px 46px;
     border-radius: 8px;
     border: 1px solid var(--signuptextcolor);
 }
@@ -286,6 +310,17 @@ body  {
     line-height: 22px;
     letter-spacing: 0em;
     color: var(--signuptextcolor);
+}
+
+.grouptwo-love {
+    background-image: url(../assess/group2.png);
+    background-position: top;
+    background-size: cover;
+    height: 152.656066931771px;
+    width: 171.5222320975061px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 .containere {
@@ -530,4 +565,127 @@ body  {
     color: #fff;
     background-color: var(--childcolor);
     transition: 2s;
+}
+
+/*sign up Page*/
+.signupflex {
+    display: flex;
+}
+
+.signupflex-one {
+    margin-left: 56px;
+    flex-basis: 50%;
+    color: var(--graycolor);
+}
+
+.signupflex-one-padding {
+    padding: 29px 0px 80px 0px;
+}
+
+.signupflex-one-form-text {
+    font-family: var(--fontfamily2);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+}
+
+.signupflex-one-form {
+    margin-top: 40px;
+}
+
+.signupflex-one-form-detail {
+    margin-bottom: 8px;
+    font-family: var(--fontfamily2);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+}
+
+.signupflex-one-form-detail span {
+    color: var(--errorcolor);
+}
+
+.signupflex-one-form input {
+    width: 550px;
+    margin-bottom: 18px;
+    padding: 19px 0px 20px 18px;
+    border: 1px solid var(--inputcolor);
+    border-radius: 8px;
+    outline: none;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.signupflex-two {
+    background-image: url(../assess/Rectangle\ 1343.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+}
+
+.signupflex-one-form-texttwo {
+    margin-bottom: 30px;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.signupflex-one-form-button {
+    margin: 22px 0px 14px 0px;
+}
+
+.signupflex-one-form-button button {
+    background-color: transparent;
+    width: 550px;
+    border-radius: 8px;
+    padding: 16px 32px 16px 32px;
+    color: var(--signuptextcolor);
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    border: 1px solid var(--signuptextcolor);
+}
+
+.signupflex-one-form-button-login{
+    margin-left: 134px;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.signupflex-one-form-button-login a {
+    text-decoration: none;
+    color: var(--logincolor);
+}
+
+/* login page*/
+
+.loginflex {
+    height: 100vh;
+}
+
+.loginflex-one-form-button button {
+    background-color: var(--signuptextcolor);
+    color: var(--whitecolor);
+}
+
+.loginflex-two {
+    background-image: url(../assess/Rectangle\ 5883.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
 }
