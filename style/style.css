@@ -16,6 +16,7 @@ body  {
     --whitecolor: rgba(255, 255, 255, 1);
     --graycolor: rgba(79, 79, 79, 1);
     --signuptextcolor: rgba(13, 110, 253, 1);
+    --footerblackcolor: rgba(32, 32, 32, 1);
     --maxwidth: 1240px;
     --fontfamily: 'Montserrat', sans-serif;
     --fontfamily2: 'Poppins', sans-serif;
@@ -341,6 +342,10 @@ body  {
     border-radius: 100%;
 }
 
+.box5 {
+    margin-right: 35px;
+}
+
 .radius-1 {
     background-image: url(../assess/Ellipse\ 169.png);
     background-size: cover;
@@ -390,4 +395,121 @@ body  {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.05em;
+}
+
+.containerf {
+    padding: 92.48px 0px 130.62px;
+    text-align: center;
+    color: var(--graycolor);
+}
+
+.container-f-community-text-one {
+    margin-bottom: 12px;
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0.1em;
+}
+
+.container-f-community-text-two {
+    height: 76px;
+    width: 725px;
+    margin: 0px auto;
+    font-family: var(--fontfamily2);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+}
+
+.container-f-button {
+    margin-top: 59.92px;
+}
+
+.container-f-button button {
+    background-color: var(--signuptextcolor);
+    width: 184px;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: var(--whitecolor);
+    border: none;
+}
+
+.footer {
+    background-color: var(--sectionc);
+    padding: 37px 0px 0px 0px;
+}
+
+.footer-flex-content {
+    display: flex;
+}
+
+.footer-flex-content-one-logo {
+    background-image: url(../assess/tmp_b9f54d42-a566-4b9a-9d32-6a7cbf15a49f\ 1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 168px;
+    width: 168px;
+}
+
+.footer-flex-content-one-text-one {
+    height: 88px;
+    width: 246px;
+    margin: 20px 0px;
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: var(--graycolor);
+}
+
+.footer-flex-content-one-text-two {
+    font-family: var(--fontfamily);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: var(--footerblackcolor);
+}
+
+.footer-flex-content-links {
+    margin-left: 70px;
+}
+
+.footer-flex-content-links p {
+    margin-bottom: 20px;
+}
+
+.footer-flex-content-links a {
+    text-decoration: none;
+    color: var(--footerblackcolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.footer-flex-content-links-headers a {
+    font-family: var(--fontfamily);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--signuptextcolor);
+}
+
+.footer-flex-content-links-flex {
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
 }
