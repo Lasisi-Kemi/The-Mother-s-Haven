@@ -20,7 +20,8 @@ body  {
     --errorcolor: rgba(226, 41, 41, 1);   
     --inputcolor: rgba(79, 79, 79, 0.2);
     --logincolor: rgba(170, 49, 105, 1);
-    --maxwidth: 1240px;
+    --maxwidth: 1237px;
+    --maxwidth2: 1300px;
     --fontfamily: 'Montserrat', sans-serif;
     --fontfamily2: 'Poppins', sans-serif;
     --sectionc: rgba(207, 226, 255, 1);
@@ -38,9 +39,9 @@ body  {
 }
 
 .nav-bar-tmh {
-    /*padding: 34px 0px 23px 0px;*/
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-bar-tmh-logpc {
@@ -89,27 +90,29 @@ body  {
 .nav-bar-tmh-links a {
     text-decoration: none;
     font-family: var(--fontfamily);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    letter-spacing: 0.1em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
     color: var(--blackcolor);
 }
 
 .nav-bar-tmh-links-signup {
-    margin-left: 69px;
+    /*margin-left: 69px;*/
     padding: 12px 24px;
-    border: 1px solid var(--signuptextcolor);
+    background-color: var(--signuptextcolor);
     border-radius: 8px;
 }
 
 .nav-bar-tmh-links-signup a {
-    color: var(--signuptextcolor);
-
+    text-decoration: none;
+    color: var(--whitecolor);
+    font-family: var(--fontfamily2);
+    font-weight: 500;
 }
 
 .containera {
-    background-image: url(../assess/Rectangle\ 7.png);
+    background-image: url(../assess/Group\ 48095868.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -703,4 +706,89 @@ body  {
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 50%;
+}
+
+.max-width {
+    width: 100%;
+    max-width: var(--maxwidth2);
+    margin: 0px auto;
+}
+
+.continue-page {
+    padding: 39px 0px 150px 0px;
+}
+
+.indicate-interest-text {
+    margin: 72px 0px 75px 0px;
+    text-align: center;
+    color: var(--graycolor);
+    font-family: var(--fontfamily);
+}
+
+.indicate-interest-text-one {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+}
+
+.indicate-interest-text-two {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.continue-page-two {
+    color: var(--graycolor);
+    font-family: var(--fontfamily);
+}
+
+.continue-page-two-interest {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+}
+
+.continue-page-two-flex {
+    margin-top: 68px;
+    font-family: var(--fontfamily);
+}
+
+.continue-page-two-flex-flex {
+    margin-bottom: 84px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.continue-page-two-flex-flex p {
+    width: 214px;
+    padding: 12px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    border: 1px solid var(--childcolor);
+    border-radius: 8px;
+}
+
+.create-account-button {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.create-account-button button {
+    background-color: var(--signuptextcolor);
+    width: 550px;
+    padding: 16px 32px 16px 32px;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: var(--whitecolor);
+    border-radius: 8px;
+    border: none;
 }
