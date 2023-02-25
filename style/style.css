@@ -1,4 +1,4 @@
-body  {
+body  * {
     margin: 0;
     padding: 0;
 }
@@ -15,20 +15,23 @@ body  {
     --blackcolor: rgba(20, 16, 16, 1);
     --whitecolor: rgba(255, 255, 255, 1);
     --graycolor: rgba(79, 79, 79, 1);
+    --graycolor2: rgba(189, 189, 189, 1);
+    --blogcolor: rgba(110, 110, 110, 1);
     --signuptextcolor: rgba(13, 110, 253, 1);
     --footerblackcolor: rgba(32, 32, 32, 1);
     --errorcolor: rgba(226, 41, 41, 1);   
     --inputcolor: rgba(79, 79, 79, 0.2);
     --logincolor: rgba(170, 49, 105, 1);
+    --hrline: rgba(53, 134, 253, 1);
     --maxwidth: 1237px;
     --maxwidth2: 1300px;
     --fontfamily: 'Montserrat', sans-serif;
     --fontfamily2: 'Poppins', sans-serif;
     --sectionc: rgba(207, 226, 255, 1);
-
 }
 
 .header {
+    width: 100%;
     background-color: var(--whitecolor);
 }
 
@@ -118,6 +121,7 @@ body  {
     background-position: center;
     width: 100%;
     height: 934.66px;
+   margin-top: 100px;
 }
 
 .container-text {
@@ -791,4 +795,503 @@ body  {
     color: var(--whitecolor);
     border-radius: 8px;
     border: none;
+}
+
+.blogs {
+    background-image: url(../assess/pexels-anna-shvets-11369185.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 371px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.blog-content {
+    padding: 79.16px 0px 94.42px 0px;
+    text-align: center;
+    font-family: var(--fontfamily);
+}
+
+.blog-content-text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: var(--whitecolor);
+}
+
+.blog-content-texttwo {
+    margin-bottom: 43.2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--whitecolor);
+}
+
+.blog-form-input input{
+    background-color: transparent;
+    width: 560.4519653320312px;
+    padding: 18.12px 10.02px 18.12px 20.02px;
+    border-radius: 8px;
+    outline: none;
+    border: 1.5px solid var(--graycolor2);
+    color: var(--graycolor2);
+    font-family: var(--fontfamily);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.blog-form-input span {
+    text-indent: -70px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-search {
+    color: var(--whitecolor);
+}
+
+.new-updates-section {
+    padding: 99px 0px 62px 0px;
+}
+
+.new-updates-section-text {
+    margin-bottom: 8px;
+    font-family: var(--fontfamily);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+}
+
+.new-updates-section-flex {
+    padding-top: 42px;
+    border-top: 1.5px solid var(--hrline);
+}
+
+.new-updates-section-flex-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-updates-section-flex-box {
+    margin-top: 64px;
+}
+
+.new-updates-section-flex-flex-pic {
+    height: 380px;
+    width: 607px;
+    border-radius: 4px;
+}
+
+.new-update-picture-one {
+    background-image: url(../assess/Image.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.new-update-picture-two {
+    background-image: url(../assess/babycare.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.new-updates-section-flex-flex-text-one {
+    margin-bottom: 16px;
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--signuptextcolor);
+}
+
+.new-updates-section-flex-flex-text-two {
+    height: 68px;
+    width: 611px;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 1);
+    font-family: var(--fontfamily);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+}
+
+.new-updates-section-flex-flex-text-three {
+    margin-bottom: 18.5px;
+    height: 104px;
+    width: 600px;
+    font-family: var(--fontfamily);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: var(--blogcolor);
+}
+
+.new-updates-section-flex-flex-flex p {
+    font-family: var(--fontfamily);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: rgba(130, 130, 130, 1);
+}
+
+.new-updates-section-flex-flex-flex a {
+    text-decoration: none;
+}
+
+.new-updates-section-flex-flex-flex-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: var(--signuptextcolor);
+    text-decoration: none;
+}
+
+.new-updates-section-flex-flex-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-updates-section-flex-button {
+    margin-top: 63px;
+    text-align: center;
+}
+
+.new-updates-section-flex-button p {
+    background-color: var(--signuptextcolor);
+    width: 260px;
+    margin: 0px auto;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+}
+
+.new-updates-section-flex-button a {
+    color: var(--whitecolor);
+    text-decoration: none;
+}
+
+.explore-section-text {
+    padding-bottom: 8px;
+    font-family: var(--fontfamily);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    border-bottom: 1.5px solid var(--hrline);
+}
+
+.explore-carousel {
+    padding: 64px 0px 91px 0px;
+}
+
+.slider-pictures {
+    display: flex;
+}
+
+.picture-frame {
+    height: 392px;
+    width: 380px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.picture-frame-content {
+    height: 248px;
+    width: 380px;
+    border-radius: 5px;
+}
+
+.baby-care-picture {
+    background-image: url(../assess/Rectangle\ 5869.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.post-partum-picture {
+    background-image: url(../assess/postpatrum.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nutrition-care-picture {
+    background-image: url(../assess/nutrition.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fitness-lifestyle-picture {
+    background-image: url(../assess/fitness.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture-frame-text {
+    background-color: rgba(255, 255, 255, 1);
+    height: 197px;
+    width: 321px;
+    margin: 0px auto;
+    text-align: center;
+    box-shadow: 0px 4px 36px 5px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0px;
+    left: 29.5px;
+}
+
+.picture-frame-text-one {
+    padding: 27px 0px 16px 0px;
+    font-family: var(--fontfamily2);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: var(--signuptextcolor);
+}
+
+.picture-frame-text-two {
+    height: 100px;
+    width: 276px;
+    margin: 0px auto;
+    padding-bottom: 27px;
+    font-family: var(--fontfamily);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+}
+
+.left-right-left {
+    background-color: #fff;
+    position: absolute;
+    top: 131px;
+    left: 100px;
+    border-radius: 100%;
+}
+
+.left-right-right {
+    background-color: #fff;
+    position: absolute;
+    top: 131px;
+    right: 100px;
+    border-radius: 100%;
+}
+
+#left-right i {
+    cursor: pointer;
+    padding: 10px 13px;
+    font-size: 14px;
+    color: var(--primaryColor);
+    background-color: #fff;
+}
+
+.fitness-and-lifestyle-boxes {
+     padding: 110px 0px 104px 0px;
+}
+
+.fitness-and-lifestyle-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitness-and-lifestyle-flex-content {
+    width: 397px;
+    box-shadow: 2px 8px 40px rgba(9, 73, 169, 0.04);
+}
+
+.fitness-and-lifestyle-flex-content-pics {
+    background-image: url(../assess/weightloss.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 318px;
+    width: 397px;
+}
+
+.fitness-and-lifestyle-flex-content-text {
+    background-color: var(--whitecolor);
+    padding-left: 16px;
+    font-family: var(--fontfamily);
+}
+
+.fitness-and-lifestyle-flex-content-text-one {
+    padding: 16px 0px 4px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(17, 17, 17, 1);
+}
+
+.fitness-and-lifestyle-flex-content-text-two {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(130, 130, 130, 1);
+}
+
+.fitness-and-lifestyle-flex-content-text-three {
+    margin: 15px 0px 8px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.fitness-and-lifestyle-flex-content-text-four {
+    height: 44px;
+    width: 365px;
+    margin-bottom: 29px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.fitness-and-lifestyle-flex-content-text-link {
+    padding-bottom: 16px;
+}
+
+.fitness-and-lifestyle-flex-content-text-link a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+.fitness-and-lifestyle-flex-content-pictwo {
+    background-image: url(../assess/exercise.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fitness-and-lifestyle-flex-content-picthree {
+    background-image: url(../assess/eatinghabit.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fitness-and-lifestyle-margin {
+    margin-top: 32px;
+}
+
+.fitness-and-lifestyle-flex-content-picsfour {
+    background-image: url(../assess/childhealth.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fitness-and-lifestyle-flex-content-picfive {
+    background-image: url(../assess/motherhealth.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fitness-and-lifestyle-flex-content-picsix {
+    background-image: url(../assess/postpat.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fitness-and-lifestyle-flex-button {
+    margin-top: 104px;
+    text-align: center;
+}
+
+.fitness-and-lifestyle-flex-button p {
+    background-color: var(--signuptextcolor);
+    width: 260px;
+    margin: 0px auto;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+}
+
+.fitness-and-lifestyle-flex-button a {
+    color: var(--whitecolor);
+    text-decoration: none;
+}
+
+.updatebg {
+    background-color: blueviolet;
+    height: 317px;
+}
+
+.update-bg-content {
+    padding: 59px 0px 70px 0px;
+    text-align: center;
+    font-family: var(--fontfamily);
+}
+
+.update-bg-content-textone {
+    margin: 16px 0px 34px 0px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(252, 252, 252, 1);
+}
+
+.update-bg-content-input input{
+    background-color: transparent;
+    width: 600px;
+    padding: 13px 30px 15px 55px;
+    border-radius: 8px;
+    outline: none;
+    border: 1.5px solid var(--graycolor2);
+    color: rgba(252, 252, 252, 1);
+    font-family: var(--fontfamily);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.envelope-icon {
+    text-indent: -1150px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.arrow-icon {
+    text-indent: -70px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.update-bg-content-input i {
+    color: var(--whitecolor);
 }
