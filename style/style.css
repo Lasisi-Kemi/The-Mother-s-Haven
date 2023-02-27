@@ -1244,7 +1244,7 @@ body  * {
 }
 
 .updatebg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assess/brett-wharton-7dMqr31WYmo-unsplash\ 1.png);
+    background-image: url(../assess/newsletter.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1352,4 +1352,64 @@ body  * {
 
 .fitness-and-lifestyle-flex-content-picsfourupdate {
     background-image: url(../assess/exercise.png);
+}
+
+/* explore baby care */
+.blogsbabycare {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assess/baby-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 296px;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.blogsbabycare-content {
+    padding-top: 87.5px;
+    text-align: center;
+}
+
+.blogsbabycare-content-text {
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.blogsbabycare-content-text-content-picsupdate {
+    background-image: url(../assess/brett-wharton-7dMqr31WYmo-unsplash\ 1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.blogs-babycare-content-text-two {
+    margin-top: 16px;
+}
+
+.blogsbabycare-content-text-content-picsupdatetwo {
+    background-image: url(../assess/diaper.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.blogsbabycare-content-text-content-picsupdatethree {
+    background-image: url(../assess/diaper-a.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.blogsbabycare-content-text-content-picsupdatefour {
+    background-image: url(../assess/childhealth.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.blogsbabycare-content-text-content-picsupdatefive {
+    background-image: url(../assess/babycare.png);
+    background-size: cover;
+    background-position: center;
 }
