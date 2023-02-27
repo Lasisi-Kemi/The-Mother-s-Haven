@@ -1545,15 +1545,13 @@ body  * {
 }
 
 .postpartum-article-flex-two-header-flex {
-    background-color: bisque;
     width: 356px;
-    height: 142px;
     margin-bottom: 25px;
     display: flex;
 }
 
 .postpartum-article-flex-two-header-flex-one {
-    height: 133px;
+    height: 142px;
     width: 200px;
     border-radius: 8px 0px 0px 8px;
 }
@@ -1586,7 +1584,7 @@ body  * {
     color: rgba(79, 79, 79, 1);
 }
 
-.postpartum-article-flex-two-header-flex-two h5 {
+.postpartum-article-flex-two-header-flex-two-headerfive {
     height: 45px;
     width: 248px;
     margin: 2px 0px;
@@ -1597,7 +1595,6 @@ body  * {
 }
 
 .postpartum-article-flex-two-header-flex-two-paragraph {
-    background-color: blue;
     height: 36px;
     width: 215px;
     font-size: 8px;
@@ -1605,10 +1602,6 @@ body  * {
     line-height: 12px;
     letter-spacing: 0.02em;
     text-align: justify;
-}
-
-.postpartum-article-flex-two-header-flex-two-link{
-    background-color: aquamarine;
 }
 
 .postpartum-article-flex-two-header-flex-two-link a{
@@ -1621,4 +1614,69 @@ body  * {
 
 .postpartum-article-flex-two-header-flex-two-link span {
     margin-left: 5px;
+}
+
+.postpartum-article-flex-two-header-flex-oneb {
+    background-image: url(../assess/top2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.postpartum-article-flex-two-header-flex-two-headerfiveone {
+    margin: 2px 0px;
+    height: 30px;
+    width: 248px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.postpartum-article-flex-two-header-flex-onec {
+    background-image: url(../assess/top3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.postpartum-article-flex-two-header-community {
+    background-color: rgba(207, 226, 255, 1);
+    border-radius: 4px;
+}
+
+.postpartum-article-flex-two-header-community-block {
+    padding: 63px 53px 42px 53px;
+    text-align: center;
+    font-family: var(--fontfamily);
+}
+
+.postpartum-article-flex-two-header-community-block p {
+    height: 180px;
+    width: 210px;
+    margin: auto;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.postpartum-article-flex-two-header-community-block-button {
+    margin-top: 21px;
+}
+
+.postpartum-article-flex-two-header-community-block-button a {
+    background-color: rgba(13, 110, 253, 1);
+    width: 166px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: var(--fontfamily2);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
 }
