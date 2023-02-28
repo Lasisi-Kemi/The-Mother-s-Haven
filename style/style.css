@@ -1418,6 +1418,12 @@ body  * {
     background-position: center;
 }
 
+.blogsbabycare-content-text-content-picsupdatesix {
+    background-image: url(../assess/babydiet.png);
+    background-size: cover;
+    background-position: center;
+}
+
 /* postpatrum new update page */
 
 .blogspostpartumcare {
@@ -1440,7 +1446,6 @@ body  * {
 }
 
 .postpartumblog-text-header {
-    height: 118px;
     width: 843px;
     margin-bottom: 18px;
     font-family: var(--fontfamily);
@@ -1545,14 +1550,14 @@ body  * {
 }
 
 .postpartum-article-flex-two-header-flex {
-    width: 356px;
+    /*width: 356px;*/
     margin-bottom: 25px;
     display: flex;
 }
 
 .postpartum-article-flex-two-header-flex-one {
     height: 142px;
-    width: 200px;
+    width: 100px;
     border-radius: 8px 0px 0px 8px;
 }
 
@@ -1679,4 +1684,191 @@ body  * {
     line-height: 22px;
     letter-spacing: 0em;
     color: rgba(255, 255, 255, 1);
+}
+
+.relatedarticles {
+    margin: 64px 0px 70px 0px;
+    font-family: var(--fontfamily);
+}
+
+.related-articles-content-text {
+    width: 794px;
+    padding-bottom: 8px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    border-bottom: 1.5px solid #3586FD;
+    color: rgba(20, 16, 16, 1);
+}
+
+.related-articles-content-articles {
+    margin-top: 42px;
+    font-family: var(--fontfamily);
+}
+
+.related-articles-content-articles-text {
+    margin-bottom: 57.5px;
+    color: rgba(79, 79, 79, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+.related-articles-content-articles-flex {
+    height: 206px;
+    margin-bottom: 35px;
+    /*width: 803px;*/
+    display: flex;
+}
+
+.related-articles-content-articles-flex-one {
+    height: 203px;
+    width: 284px;
+    border-radius: 8px;
+}
+
+.related-articles-content-articles-flex-one {
+    background-image: url(../assess/articlescreen1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.related-articles-content-articles-flex-two {
+    margin-left: 24px;
+}
+
+.related-articles-content-articles-flex-two-textone {
+    margin-bottom: 11.5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.related-articles-content-articles-flex-two-texttwo {
+    width: 495px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.related-articles-content-articles-flex-two-textthree {
+    width: 491px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: rgba(79, 79, 79, 1);
+}
+
+.related-articles-content-articles-flex-oneb {
+    background-image: url(../assess/brett-wharton-7dMqr31WYmo-unsplash\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.related-articles-content-articles-flex-onec {
+    background-image: url(../assess/articlescreen3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* fitness and lifestyle page */
+
+.fitnessandlifestyle {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assess/fitness-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 296px;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.fitnessandlifestyle-article-flex-one-one {
+    background-image: url(../assess/fitnessandlifestyle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 535px;
+    width: 819px;
+    border-radius: 8px;
+}
+
+.fitnessandlifestyle-article-flex-one-oneb {
+    background-image: url(../assess/fitnessandlifestyle2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 535px;
+    width: 819px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.fitnessandlifestyle-bulleted-list li {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+}
+
+.fitnessandlifestyle-bulleted-list span {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+
+/* diapering page */
+
+.postpartumblog-flex-header-ellipsea {
+    background-image: url(../assess/blogger.png);
+}
+
+.babycare-article-flex-one-one {
+    background-image: url(../assess/babycare.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 535px;
+    width: 819px;
+    border-radius: 8px;
+}
+
+.diapering-bulleted-list li {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+}
+
+.diapering-bulleted-list span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: justify;
+}
+
+.diapering-bulleted-header {
+    padding-top: 20px;
 }
