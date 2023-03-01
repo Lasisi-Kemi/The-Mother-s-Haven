@@ -16,43 +16,47 @@
     </head>
     <body>
         <section class="continue">
-            <div class="max-width">
+            <div class="max_width">
                 <div class="continue-page">
-                    <div class="nav-bar-tmh-logo">
-                        <p><a href="index.html">THE MOTHER’S <span>HAVEN</span></a></p>
-                    </div>
                     <div class="indicate-interest-text">
                         <p class="indicate-interest-text-one">Indicate your interests</p>
                         <p class="indicate-interest-text-two">Let’s help curate content specifically for your needs</p>
                     </div>
-                    <div class="continue-page-two">
-                        <p class="continue-page-two-interest">Select up to five (5) interests</p>
-                        <div class="continue-page-two-flex">
-                            <div class="continue-page-two-flex-flex">
-                                <p>Pregnancy</p>
-                                <p>Postpartum</p>
-                                <p>Childcare</p>
-                                <p>Postpartum</p>
-                            </div>
-                            <div class="continue-page-two-flex-flex">
-                                <p>Blogs</p>
-                                <p>Family Planning</p>
-                                <p>Nutrition</p>
-                                <p>Community</p>
-                            </div>
-                            <div class="continue-page-two-flex-flex">
-                                <p>Mental Health</p>
+                    <form>
+                        <div class="continue-page-two">
+                            <p class="continue-page-two-interest">Select up to five (5) interests</p>
+                            <div class="continue-page-two-flex">
+                                <div class="continue-page-two-flex-flex">
+                                    <p id="interest-1" onclick="myInterest(1)">Pregnancy</p>
+                                    <p id="interest-2" onclick="myInterest(2)">Postpartum</p>
+                                    <p id="interest-3" onclick="myInterest(3)">Childcare</p>
+                                    <p id="interest-4" onclick="myInterest(4)">Wellness Tips</p>
+                                </div>
+                                <div class="continue-page-two-flex-flex">
+                                    <p id="interest-5" onclick="myInterest(5)">Family Planning</p>
+                                    <p id="interest-6" onclick="myInterest(6)">Community</p>
+                                    <p id="interest-7" onclick="myInterest(7)">Nutrition</p>
+                                </div>
+                                <div class="continue-page-two-flex-flex">
+                                    <p id="interest-8" onclick="myInterest(8)">Fitness</p>
+                                    <p id="interest-9" onclick="myInterest(9)">Blogs</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="create-account-button">
-                        <button>Create Account</button>
-                    </div>
+                        <div class="create-account-button">
+                            <button class="create-account-button-one">Cancel</button>
+                            <button class="create-account-button-two">Create Account</button>
+                        </div>
+                    </form> 
                 </div>
             </div>
         </section>
         <div id="backToTop">
             <i class="fas fa-arrow-up rounded-circle shadow"></i>
         </div>
+        <!--script-->
+        <script src="./script/script.js">
+
+        </script>
     </body>
 </html>

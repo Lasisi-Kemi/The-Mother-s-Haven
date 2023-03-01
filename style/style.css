@@ -30,6 +30,7 @@ body  * {
     --sectionc: rgba(207, 226, 255, 1);
 }
 
+/*header start here */
 .header {
     width: 100%;
     background-color: var(--whitecolor);
@@ -113,19 +114,20 @@ body  * {
     font-family: var(--fontfamily2);
     font-weight: 500;
 }
-
+/* header ends here */
+/*herosection start here */
 .containera {
-    background-image: url(../assess/Group\ 48095868.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assess/hero-section.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 934.66px;
-   margin-top: 100px;
+    height: 925px;
+    margin-top: 100px;
 }
 
 .container-text {
-    padding-top: 242px;
+    padding-top: 188px;
 }
 
 .container-a-text {
@@ -151,9 +153,9 @@ body  * {
 }
 
 .container-get-started {
-    background-color: var(--whitecolor);
+    background-color: var(--signuptextcolor);
     width: 184px;
-    margin: 60px 0px 299.66px 0px;
+    margin: 40px 0px 364px 0px;
     padding: 21px 46.5px;
     border-radius: 8px;
 }
@@ -165,13 +167,45 @@ body  * {
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;
-    color: var(--signuptextcolor);
+    color: var(--whitecolor);
+}
+
+.container-get-started:hover {
+    cursor: pointer;
+    background-color: rgba(9, 73, 169, 1);
+    color: var(--whitecolor);
+} 
+/* hero section ends here */
+/*about us section start here */
+.containerb {
+    padding: 98px 0px 106px 0px;
 }
 
 .containerb-text {
-    padding: 105px 0px 148px 0px;
-    text-align: center;
     color: var(--graycolor);
+}
+
+.about-us-flex {
+    display: flex;
+}
+
+.about-us-flex-background {
+    background-image: url(../assess/Premier\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 710px;
+    flex-basis: 50%;
+    border-radius: 8px;
+}
+
+.about-us-flex-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    flex-basis: 50%;
+    text-align: justify;  
 }
 
 .container-b-text {
@@ -181,12 +215,9 @@ body  * {
     font-weight: 600;
     line-height: 59px;
     letter-spacing: 0.1em;
-    text-align: center;
 }
 
 .container-b-texttwo {
-    height: 320px;
-    width: 945px;
     margin: 0px auto;
     font-family: var(--fontfamily2);
     font-size: 24px;
@@ -194,14 +225,13 @@ body  * {
     line-height: 43px;
     letter-spacing: 0.05em;
 }
+/*about us section ends here*/
+/*offers section start here */
 
 .containerc {
     background-color: var(--sectionc);
+    padding: 116px 0px 186px 0px;
     position: relative;
-}
-
-.container-c-text {
-    padding: 105px 0px 133px 0px;
 }
 
 .container-c-text-content {
@@ -232,6 +262,10 @@ body  * {
     padding-top: 72px;
     display: flex;
     justify-content: space-between;
+}
+
+.flex-content-tmh a {
+    text-decoration: none;
 }
 
 .flex-content-tmh-box {
@@ -273,7 +307,11 @@ body  * {
     bottom: 0px;
 }
 
+/* offers section ends here */
+/*focus section start here */
+
 .containerd {
+    height: 790px;
     position: relative;
 }
 
@@ -283,21 +321,25 @@ body  * {
 }
 
 .flex-content-containerd-picture {
-    background-image: url(../assess/pexels-william-fortunato-6393377\ 2.png);
+    height: 790px;
+    width: 861px;
+    background-image: url(../assess/focusimage.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    width: 100%;
-    flex-basis: 50%;
 }
 
 .flex-content-containerd-text {
-    flex-basis: 50%;
+    width: 579px;
+    height: 363px;
     color: var(--graycolor);
+    text-align: justify;
+    position: absolute;
+    top: 240px;
+    left: 725px;
 }
 
 .flex-content-containerd-text-one {
-    margin: 151px 0px 20px 0px;
     font-family: var(--fontfamily);
     font-size: 56px;
     font-weight: 700;
@@ -314,15 +356,22 @@ body  * {
 }
 
 .flex-content-containerd-text-link {
-    margin: 37px 0px 317px 0px;
+    margin-top: 24px;
 }
 
 .flex-content-containerd-text-link p {
+    background-color: var(--whitecolor);
     width: 190px;
     padding: 21px 46px;
     border-radius: 8px;
     border: 1px solid var(--signuptextcolor);
 }
+
+.flex-content-containerd-text-link p:hover {
+    cursor: pointer;
+    background-color: rgba(9, 73, 169, 1);
+    color: var(--whitecolor);
+} 
 
 .flex-content-containerd-text-link a {
     text-decoration: none;
@@ -345,12 +394,12 @@ body  * {
     bottom: 0px;
 }
 
+/*focus section ends here*/
+/*medical advisory section starts here */
+
 .containere {
     background-color: var(--sectionc);
-}
-
-.container-e-medical {
-    padding: 103px 0px 71px 0px;
+    padding: 116px 0px 58px 0px;
 }
 
 .container-e-medical-text {
@@ -380,12 +429,14 @@ body  * {
 
 .container-e-medical-container {
     margin-top: 116px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-e-medical-flex-container {
     margin-bottom: 68px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     color: var(--graycolor);
 }
 
@@ -399,8 +450,8 @@ body  * {
     border-radius: 100%;
 }
 
-.box5 {
-    margin-right: 35px;
+.box-radius {
+    margin-top: 68px;
 }
 
 .radius-1 {
@@ -453,9 +504,11 @@ body  * {
     line-height: 24px;
     letter-spacing: 0.05em;
 }
+/*medical advisory section ends here */
+/*join our community section starts here */
 
 .containerf {
-    padding: 92.48px 0px 130.62px;
+    padding: 115.85px 0px 134.18px;
     text-align: center;
     color: var(--graycolor);
 }
@@ -481,14 +534,32 @@ body  * {
 }
 
 .container-f-button {
+    height: 64px;
+    width: 490px;
+    margin: 0px auto;
     margin-top: 59.92px;
+    position: relative;
+}
+
+.container-f-button input {
+    width: 490px;
+    padding: 20px 0px 19px 22px;
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    outline: none;
 }
 
 .container-f-button button {
     background-color: var(--signuptextcolor);
     width: 184px;
     border-radius: 8px;
-    padding: 16px 32px;
+    padding: 21px 0px;
     font-family: var(--fontfamily2);
     font-size: 16px;
     font-weight: 500;
@@ -496,7 +567,11 @@ body  * {
     letter-spacing: 0em;
     color: var(--whitecolor);
     border: none;
+    position: absolute;
+    right: 0px;
 }
+/*Join our community ends here*/
+/*Footer starts here*/
 
 .footer {
     background-color: var(--sectionc);
@@ -588,10 +663,21 @@ body  * {
     background-color: var(--childcolor);
     transition: 2s;
 }
-
+/*footer ends here*/
 /*sign up Page*/
+
 .signupflex {
     display: flex;
+}
+
+.nav-bar-tmh-signup {
+    background-image: url(../assess/signup-logo.png);
+    background-size: cover;
+    height: 135px;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .signupflex-one {
@@ -601,7 +687,7 @@ body  * {
 }
 
 .signupflex-one-padding {
-    padding: 29px 0px 80px 0px;
+    padding: 23px 0px 87px 0px;
 }
 
 .signupflex-one-form-text {
@@ -612,8 +698,14 @@ body  * {
     letter-spacing: 0.02em;
 }
 
-.signupflex-one-form {
-    margin-top: 40px;
+.signupflex-one-form-texttwo {
+    margin-bottom: 24px;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 
 .signupflex-one-form-detail {
@@ -631,7 +723,7 @@ body  * {
 
 .signupflex-one-form input {
     width: 550px;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
     padding: 19px 0px 20px 18px;
     border: 1px solid var(--inputcolor);
     border-radius: 8px;
@@ -644,21 +736,11 @@ body  * {
 }
 
 .signupflex-two {
-    background-image: url(../assess/Rectangle\ 1343.png);
+    background-image: url(../assess/signupbg.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 50%;
-}
-
-.signupflex-one-form-texttwo {
-    margin-bottom: 30px;
-    font-family: var(--fontfamily2);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-    text-align: left;
 }
 
 .signupflex-one-form-button {
@@ -669,7 +751,7 @@ body  * {
     background-color: transparent;
     width: 550px;
     border-radius: 8px;
-    padding: 16px 32px 16px 32px;
+    padding: 13px 32px 16px 32px;
     color: var(--signuptextcolor);
     font-family: var(--fontfamily2);
     font-size: 16px;
@@ -677,6 +759,12 @@ body  * {
     line-height: 22px;
     letter-spacing: 0em;
     border: 1px solid var(--signuptextcolor);
+}
+
+.signupflex-one-form-button button:hover {
+    cursor: pointer;
+    background-color: rgba(9, 73, 169, 1);
+    color: var(--whitecolor);
 }
 
 .signupflex-one-form-button-login{
@@ -692,11 +780,35 @@ body  * {
     text-decoration: none;
     color: var(--logincolor);
 }
-
+/*sign up page ends here */
 /* login page*/
 
 .loginflex {
     height: 100vh;
+}
+
+.nav-bar-tmh-login {
+    background-image: url(../assess/tmp_b9f54d42-a566-4b9a-9d32-6a7cbf15a49f\ 1.png);
+    background-size: cover;
+    height: 98px;
+    width: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginflex-one-form input {
+    width: 550px;
+    margin-bottom: 18px;
+    padding: 19px 0px 20px 18px;
+    border: 1px solid var(--inputcolor);
+    border-radius: 8px;
+    outline: none;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
 }
 
 .loginflex-one-form-button button {
@@ -705,12 +817,14 @@ body  * {
 }
 
 .loginflex-two {
-    background-image: url(../assess/Rectangle\ 5883.png);
+    background-image: url(../assess/login-bg.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 50%;
 }
+/*login end here*/
+/* continue page starts from here */
 
 .max-width {
     width: 100%;
@@ -719,17 +833,18 @@ body  * {
 }
 
 .continue-page {
-    padding: 39px 0px 150px 0px;
+    padding: 101px 0px 139px 0px;
 }
 
 .indicate-interest-text {
-    margin: 72px 0px 75px 0px;
+    margin: 0px 0px 40px 0px;
     text-align: center;
     color: var(--graycolor);
     font-family: var(--fontfamily);
 }
 
 .indicate-interest-text-one {
+    margin-bottom: 16px;
     font-size: 32px;
     font-weight: 600;
     line-height: 39px;
@@ -756,18 +871,21 @@ body  * {
 }
 
 .continue-page-two-flex {
-    margin-top: 68px;
+    margin-top: 50px;
     font-family: var(--fontfamily);
 }
 
 .continue-page-two-flex-flex {
-    margin-bottom: 84px;
+    margin-bottom: 44px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
 }
 
 .continue-page-two-flex-flex p {
     width: 214px;
+    margin-left: 32px;
     padding: 12px 10px;
     font-size: 20px;
     font-weight: 500;
@@ -778,25 +896,48 @@ body  * {
     border-radius: 8px;
 }
 
-.create-account-button {
-    margin-top: 17px;
-    text-align: center;
+.continue-page-two-flex-flex P:hover {
+    background-color: rgba(255, 219, 236, 1);
+    cursor: pointer;
 }
 
-.create-account-button button {
-    background-color: var(--signuptextcolor);
-    width: 550px;
-    padding: 16px 32px 16px 32px;
+.create-account-button {
+    margin-top: 133px;
+    display: flex;
+    justify-content: space-around;
+    /*text-align: center;*/
+}
+
+.create-account-button-one {
+    background-color: transparent;
+    height: 54px;
+    width: 117px;
+    border-radius: 4px;
+    padding: 16px 0px;
+    border: 1px solid #BDBDBD;
+    font-family: var(--fontfamily2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(189, 189, 189, 1);
+}
+
+.create-account-button-two {
+    background-color: rgba(11, 92, 211, 1);
+    width: 184px;
+    border-radius: 4px;
+    padding: 16px 0px;
     font-family: var(--fontfamily2);
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;
     color: var(--whitecolor);
-    border-radius: 8px;
     border: none;
 }
-
+/*continue page ends here*/
+/*blog page start here*/
 .blogs {
     background-image: url(../assess/pexels-anna-shvets-11369185.png);
     background-position: center;
@@ -1252,7 +1393,6 @@ body  * {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: blueviolet;
     height: 317px;
 }
 
@@ -1305,8 +1445,9 @@ body  * {
 .update-bg-content-input i {
     color: var(--whitecolor);
 }
-
+/* blog page ends end */
 /* update page */
+
 .blogsupdate {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assess/Rectangle\ 1473.png);
     background-position: center;
@@ -1357,8 +1498,9 @@ body  * {
 .fitness-and-lifestyle-flex-content-picsfourupdate {
     background-image: url(../assess/exercise.png);
 }
-
+/* update page ends here */
 /* explore baby care */
+
 .blogsbabycare {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assess/baby-bg.png);
     background-position: center;
@@ -1423,7 +1565,7 @@ body  * {
     background-size: cover;
     background-position: center;
 }
-
+/* babycare page ends here */
 /* postpatrum new update page */
 
 .blogspostpartumcare {
@@ -1782,7 +1924,7 @@ body  * {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* Postpartum ends here */
 /* fitness and lifestyle page */
 
 .fitnessandlifestyle {
@@ -1834,11 +1976,15 @@ body  * {
     letter-spacing: 0.02em;
     text-align: justify;
 }
-
+/* fitness and lifestyle ends here */
 /* diapering page */
 
 .postpartumblog-flex-header-ellipsea {
     background-image: url(../assess/blogger.png);
+}
+
+.diapering-article-span-text span {
+    font-size: 64px;
 }
 
 .babycare-article-flex-one-one {
@@ -1871,4 +2017,82 @@ body  * {
 
 .diapering-bulleted-header {
     padding-top: 20px;
+}
+
+.diapering-image-bulleted-list {
+    height: 286.77044677734375px;
+    width: 439px;
+    border-radius: 2.977914810180664px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.diapering-image-bulleted-listone {
+    background-image: url(../assess/diaper-article.png);
+}
+
+.diapering-image-bulleted-listtwo {
+    background-image: url(../assess/diaper-article1.png);
+}
+
+.diapering-image-bulleted-listthree {
+    background-image: url(../assess/diaper-article2.png);
+}
+
+.diapering-articles-content-articles-flex-onea {
+    background-image: url(../assess/diaper-a.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.diapering-articles-content-articles-flex-oneb {
+    background-image: url(../assess/diaper.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* diaper page ends here */
+/* Nutrition page starts here */
+.nutritionblogs {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assess/nutrition-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 261px;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.postpartumblog-flex-header-ellipsenutrition {
+    background-image: url(../assess/blogger2.png);
+}
+
+.nutrition-article-flex-one-one {
+    background-image: url(../assess/meal-plan.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 535px;
+    width: 819px;
+    border-radius: 8px;
+}
+
+/* postpartum article */
+
+.postpartumarticle-article-flex-one-one {
+    background-image: url(../assess/postpartarticle.png);
+}
+
+.postpartumarticle-flex-header-ellipse {
+    background-image: url(../assess/blogger3.png);
+}
+
+.postpartumarticle-article-flex-one-oneb {
+    background-image: url(../assess/postpartumarticle2.png);
 }
