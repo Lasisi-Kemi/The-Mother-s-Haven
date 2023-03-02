@@ -3,6 +3,17 @@ let changeColor;
 let selectedInterest = [];
 let backToTop;
 
+window.addEventListener('load', () => {
+    AOS.init({
+     offset: 120, // offset (in px) from the original trigger point
+     delay: 200, // values from 0 to 3000, with step 50ms
+     duration: 1000, // values from 0 to 3000, with step 50ms
+     easing: 'ease-in-out', // default easing for AOS animations
+     once: false, // whether animation should happen only once - while scrolling down
+     mirror: true,
+    });
+  });
+
 function myInterest(added) {
     if(selectedInterest.includes(added)) {
         alert("you can't select the same box twice")
