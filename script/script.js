@@ -63,8 +63,8 @@ backToTop.addEventListener("click", () => {
 })*/
 
 
-let communityFilters = document.querySelectorAll('#community-filters li'); 
-let communityGallery = document.querySelectorAll('#community-profile-news-filters .community-filters-section-array .community-profile-news-filters'); 
+let communityFilters = document.querySelectorAll('#community-filter li'); 
+let communityGallery = document.querySelectorAll('#community-profile-news-filters .community-filters-section-array .community-filters-section-list'); 
 for(let i=0; i<communityFilters.length; i++) {
     communityFilters[i].addEventListener('click', function(e) {
         e.preventDefault();
@@ -73,13 +73,15 @@ for(let i=0; i<communityFilters.length; i++) {
         }
         communityFilters[i].classList.add("active")
         let dataFilter = communityFilters[i].getAttribute("data-filter")
-        for(let k=0; k<portfolioGallery.length; k++) {
+        for(let k=0; k<communityGallery.length; k++) {
             if(dataFilter === "*") {
-                communityGallery[k].style.display = "flex"   
+                communityGallery[k].style.display = "flex"
+                communityGallery[k].style.flexDirection = "column" 
             }
             else if(communityGallery[k].getAttribute("data-filter") === dataFilter) {
                 //console.log("hmm")
                 communityGallery[k].style.display = "flex"
+                communityGallery[k].style.flexDirection = "column"
             }
             else {  
                 communityGallery[k].style.display = "none"   
