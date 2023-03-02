@@ -178,7 +178,7 @@ body  * {
 /* hero section ends here */
 /*about us section start here */
 .containerb {
-    padding: 98px 0px 106px 0px;
+    padding: 101px 0px 95px 0px;
 }
 
 .containerb-text {
@@ -192,9 +192,9 @@ body  * {
 .about-us-flex-background {
     background-image: url(../assess/Premier\ 1.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    height: 710px;
+    height: 608px;
     flex-basis: 50%;
     border-radius: 8px;
 }
@@ -205,25 +205,26 @@ body  * {
     justify-content: center;
     padding-left: 24px;
     flex-basis: 50%;
-    text-align: justify;  
+    text-align: justify;
 }
 
 .container-b-text {
-    margin-bottom: 12px;
+    margin-bottom: 98px;
     font-family: var(--fontfamily);
     font-size: 48px;
     font-weight: 600;
     line-height: 59px;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 .container-b-texttwo {
-    margin: 0px auto;
     font-family: var(--fontfamily2);
     font-size: 24px;
     font-weight: 400;
-    line-height: 37px;
-    letter-spacing: 0.05em;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    align-self: center;
 }
 /*about us section ends here*/
 /*offers section start here */
@@ -508,7 +509,7 @@ body  * {
 /*join our community section starts here */
 
 .containerf {
-    padding: 115.85px 0px 134.18px;
+    padding: 115.85px 0px 127px;
     text-align: center;
     color: var(--graycolor);
 }
@@ -534,14 +535,14 @@ body  * {
 }
 
 .container-f-button {
-    height: 64px;
+    /*height: 64px;
     width: 490px;
-    margin: 0px auto;
+    margin: 0px auto;*/
     margin-top: 59.92px;
-    position: relative;
+    /*position: relative;*/
 }
 
-.container-f-button input {
+/*.container-f-button input {
     width: 490px;
     padding: 20px 0px 19px 22px;
     font-family: var(--fontfamily);
@@ -553,13 +554,13 @@ body  * {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.11);
     border-radius: 8px;
     outline: none;
-}
+}*/
 
 .container-f-button button {
     background-color: var(--signuptextcolor);
     width: 184px;
     border-radius: 8px;
-    padding: 21px 0px;
+    padding: 21px 24.5px;
     font-family: var(--fontfamily2);
     font-size: 16px;
     font-weight: 500;
@@ -567,8 +568,8 @@ body  * {
     letter-spacing: 0em;
     color: var(--whitecolor);
     border: none;
-    position: absolute;
-    right: 0px;
+    /*position: absolute;
+    right: 0px;*/
 }
 /*Join our community ends here*/
 /*Footer starts here*/
@@ -1470,6 +1471,14 @@ body  * {
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.home-update-blog a {
+    text-decoration: none;
+}
+
+.home-update-blog-link {
     color: rgba(20, 16, 16, 1);
 }
 

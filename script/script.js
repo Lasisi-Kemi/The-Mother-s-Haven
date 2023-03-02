@@ -1,6 +1,7 @@
 let interest;
 let changeColor;
 let selectedInterest = [];
+let backToTop;
 
 function myInterest(added) {
     if(selectedInterest.includes(added)) {
@@ -19,10 +20,73 @@ function myInterest(added) {
     }   
 }
 
+/*backtotop */
+
+backToTop = document.querySelector("#backToTop"); 
+window.addEventListener('scroll', () => {
+    let position = window.scrollY
+    if(position > 300) {
+        backToTop.style.display = "block"
+    }
+    else {
+        backToTop.style.display = "none"
+    }
+})
+
+backToTop.addEventListener("click", () => {
+    document.body.scrollTop = 0 //For Safari
+    document.documentElement.scrollTop = 0 //For chrome, Firefox, IE and Opera
+})
+
+/* backtotop ends here */
+
+/*let navbar = document.querySelector('#nav');
+  window.addEventListener('scroll', () => {
+    let position = window.scrollY
+    if(position > 69) {
+        navbar.classList.add("scrolled")
+    }
+    else {
+        navbar.classList.remove("scrolled")
+    }
+})*/
+
+
+let communityFilters = document.querySelectorAll('#community-filters li'); 
+let communityGallery = document.querySelectorAll('#community-profile-news-filters .community-filters-section-array .community-profile-news-filters'); 
+for(let i=0; i<communityFilters.length; i++) {
+    communityFilters[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        for(let j=0; j<communityFilters.length; j++) {
+            communityFilters[j].classList.remove("active")
+        }
+        communityFilters[i].classList.add("active")
+        let dataFilter = communityFilters[i].getAttribute("data-filter")
+        for(let k=0; k<portfolioGallery.length; k++) {
+            if(dataFilter === "*") {
+                communityGallery[k].style.display = "flex"   
+            }
+            else if(communityGallery[k].getAttribute("data-filter") === dataFilter) {
+                //console.log("hmm")
+                communityGallery[k].style.display = "flex"
+            }
+            else {  
+                communityGallery[k].style.display = "none"   
+            }
+        }
+        
+        AOS.refresh()
+    });
+}
+
+
+
 function setUp() {
     
+
     
 }
+
 
 setUp()
 
