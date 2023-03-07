@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Community</title>
+        <title>View Profile</title>
         <link rel="stylesheet" href="./assess/vendors/aos/aos.css" />
         <link rel="icon" type="access/png" href="assess/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -45,9 +45,7 @@
             <form class="community-form-input">
                 <p>
                     <input type="search" name="search" placeholder="Search">
-                    <span class="search-icon">
-                        <i class="fa fa-search icon-search-community" aria-hidden="true"></i>
-                    </span>
+                    <span class="search-icon"><i class="fa fa-search icon-search-community" aria-hidden="true"></i></span>
                     <button class="lettalk-button">Let’s talk</button>
                 </p>
             </form>
@@ -98,71 +96,47 @@
                         </form>
                     </div>
                     <!--community profile news userprofile ends here-->
-                    <div class="community-profile-news-filters" id="community-profile-news-filters">
-                        <ul id="community-filter" class="community-filters-section">
-                            <li data-filter="*" class="active">All questions</li>
-                            <li data-filter="Latest">Latest</li>
-                            <li data-filter="Popular">Popular</li>
+                    <div class="profile-profile-news-filters" id="profile-profile-news-filters">
+                        <ul id="profile-filter" class="profile-filters-section">
+                            <li class="list-margin-right" data-filter="Viewprofile" class="active">View profile</li>
+                            <li class="list-margin-right" data-filter="Notifications">Notifications</li>
+                            <li class="list-margin-right" data-filter="Settings">Settings</li>
+                            <li data-filter="Privacypolicy">Privacy policy</li>
                         </ul>
-                        <div class="community-filters-section-array" id="community-filters-section-array">
-                            <div class="community-filters-section-list" data-filter="Popular">
-                                <div class="community-filters-section-list-profile">
-                                    <img class="community-filters-section-list-profile-img" src="">
-                                    <div class="community-filters-section-list-profile-flex">
-                                        <p class="community-filters-section-list-profile-name">Emily Temi</p>
-                                        <p class="community-filters-section-list-profile-time">3 mins ago</p>
+                        <div class="profile-profile-news-filters-section" data-filter="Viewprofile">
+                            <p class="profile-profile-news-filters-section-text">Your Profile  Picture</p>
+                            <div>
+                                <form class="profile-profile-news-filters-section-text-form">
+                                    <div class="profile-profile-news-filters-section-text-form-img">
+
                                     </div>
-                                </div>
-                                <p class="community-filters-section-list-comment">Hi there! I'm a new mom and I'm curious 
-                                    about what type of activities I should be doing with my baby. Are there any tips 
-                                    for encouraging healthy development?
-                                </p>
-                                <div class="community-filters-section-list-links">
-                                    <a href="#">Replies</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Report</a>
-                                </div>
-                            </div>
-                            <div class="community-filters-section-list" data-filter="Latest">
-                                <div class="community-filters-section-list-profile">
-                                    <img class="community-filters-section-list-profile-img" src="">
-                                    <div class="community-filters-section-list-profile-flex">
-                                        <p class="community-filters-section-list-profile-name">Zoe Lola</p>
-                                        <p class="community-filters-section-list-profile-time">1 hr ago</p>
+                                    <div class="profile-profile-news-filters-section-text-form-button">
+                                        <button class="change-button">Change picture</button>
+                                        <button class="delete-button">Delete picture</button>
                                     </div>
-                                </div>
-                                <p class="community-filters-section-list-comment">Hi there! I'm a parent and I'm trying to 
-                                    figure out the best way to care for my baby. I'm wondering when is the best 
-                                    time to start introducing solid foods?
-                                </p>
-                                <div class="community-filters-section-list-links">
-                                    <a href="#">Replies</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Report</a>
-                                </div>
+                                </form>
                             </div>
-                            <div class="community-filters-section-list" data-filter="Latest">
-                                <div class="community-filters-section-list-profile">
-                                    <img class="community-filters-section-list-profile-img" src="">
-                                    <div class="community-filters-section-list-profile-flex">
-                                        <p class="community-filters-section-list-profile-name">Clara Ade</p>
-                                        <p class="community-filters-section-list-profile-time">2 hrs ago</p>
-                                    </div>
+                            <form class="profile-profile-news-filters-section-forms">
+                                <div class="profile-profile-news-filters-section-forms-flex">
+                                    <p><span>First name</span> <br>
+                                        <input type="text" name="firstname">
+                                    </p>
+                                    <p><span>Last name</span> <br>
+                                        <input type="text" name="lasttname">
+                                    </p>
                                 </div>
-                                <p class="community-filters-section-list-comment">Hi there! I'm a parent and I'm trying to 
-                                    figure out the best way to care for my baby. I'm wondering when is the best time to 
-                                    start introducing solid foods?
+                                <p class="profile-profile-news-filters-section-forms-input"><span>E-mail</span> <br>
+                                    <input type="email" name="email"> 
                                 </p>
-                                <div class="community-filters-section-list-links">
-                                    <a href="#">Replies</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Report</a>
+                                <p class="profile-profile-news-filters-section-forms-textarea"><span>Bio</span> <br>
+                                    <textarea>Introduce yourself!</textarea>
+                                </p>
+                                <div class="profile-profile-news-filters-section-text-form-button-b">
+                                    <button class="update-profile-button">Update profile</button>
+                                    <button class="reset-profile-button">Reset</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
-                        <form class="community-filters-section-array-button">
-                            <button>View more questions</button>
-                        </form>
                     </div>
                     <!--ask a question tags starts here-->
                     <div class="ask-a-question-tags">
@@ -172,36 +146,6 @@
                                 <span class="ask-a-question-tags-member-flex-text online-active-color">online</span>
                             </div>
                             <p class="population-of-members ask-a-question-tags-member-flex-text">8,560 members</p>
-                        </div>
-                        <p class="ask-a-question-tags-questions"><a href="#">Ask a question</a></p>
-                        <div class="ask-a-question-tags-trending">
-                            <p class="ask-a-question-tags-trending-one">Top trending topic</p>
-                            <p class="ask-a-question-tags-trending-two trending-topics"><span>#1</span> Newborncare</p>
-                            <p class="ask-a-question-tags-trending-two trending-topics"><span>#2</span> proudmommy</p>
-                            <p class="ask-a-question-tags-trending-two trending-topics"><span>#3</span> Smallwins</p>
-                            <p class="ask-a-question-tags-trending-two"><span>#4</span> wellnesshour</p>
-                        </div>
-                        <div class="ask-a-question-tags-populartags">
-                            <p class="ask-a-question-tags-populartags-text">Popular Tags</p>
-                            <div class="ask-a-question-tags-populartags-flex ask-a-question-tags-populartags-flex-margin">
-                                <p>Mental health</p>
-                                <p class="ask-a-question-tags-populartags-flex-margin-right">Breast feeding</p>
-                            </div>
-                            <div class="ask-a-question-tags-populartags-flex ask-a-question-tags-populartags-flex-margin">
-                                <p>Nutrition</p>
-                                <p class="ask-a-question-tags-populartags-flex-margin-right">Exercise</p>
-                                <p>Support</p>
-                            </div>
-                            <div class="ask-a-question-tags-populartags-flex ask-a-question-tags-populartags-flex-margin">
-                                <p>Small wins </p>
-                                <p class="ask-a-question-tags-populartags-flex-margin-right">Lifestyle</p>
-                                <p>Sleep</p>
-                            </div>
-                            <div class="ask-a-question-tags-populartags-flex">
-                                <p>Family</p>
-                                <p class="ask-a-question-tags-populartags-flex-margin-right">Toddler</p>
-                                <p>Weaning</p>
-                            </div>
                         </div>
                     </div>
                     <!--ask a question tags ends here-->

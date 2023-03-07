@@ -1,6 +1,7 @@
 let interest;
 let changeColor;
 let selectedInterest = [];
+let selectedProfile = [];
 let backToTop;
 
 window.addEventListener('load', () => {
@@ -30,6 +31,7 @@ function myInterest(added) {
         }
     }   
 }
+
 
 /*backtotop */
 
@@ -92,17 +94,37 @@ for(let i=0; i<communityFilters.length; i++) {
     });
 }
 
+jQuery('#community-filters-section-array').css("overflow-y", "scroll");
 
 
-function setUp() {
-    
-
-    
+let profileFilters = document.querySelectorAll('#profile-filter li'); 
+let profileGallery = document.querySelectorAll('#profile-profile-news-filters .profile-filters-section-array .profile-filters-section-list'); 
+for(let i=0; i<profileFilters.length; i++) {
+    profileFilters[i].addEventListener('click', function(c) {
+        c.preventDefault();
+        for(let j=0; j<profileFilters.length; j++) {
+            profileFilters[j].classList.remove("active")
+        }
+        profileFilters[i].classList.add("active")
+        let dataFilter = profileFilters[i].getAttribute("data-filter")
+        for(let k=0; k<profileGallery.length; k++) {
+            if(dataFilter === "*") {
+                profileGallery[k].style.display = "flex"
+                profileGallery[k].style.flexDirection = "column" 
+            }
+            else if(profileGallery[k].getAttribute("data-filter") === dataFilter) {
+                //console.log("hmm")
+                profileGallery[k].style.display = "flex"
+                profileGallery[k].style.flexDirection = "column"
+            }
+            else {  
+                profileGallery[k].style.display = "none"   
+            }
+        }
+        
+        AOS.refresh()
+    });
 }
-
-
-setUp()
-
 
 /*function myInterest(val) {
     if (selectedInterest.includes(val)){
@@ -118,3 +140,14 @@ setUp()
         }
     }
 }*/
+
+let navbar = document.querySelector('#nav');
+window.addEventListener('scroll', () => {
+  let position = window.scrollY
+  if(position > 69) {
+      navbar.classList.add("scrolled")
+  }
+  else {
+      navbar.classList.remove("scrolled")
+  }
+})

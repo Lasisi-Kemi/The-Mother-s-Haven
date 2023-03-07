@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Community</title>
+        <title>Answered</title>
         <link rel="stylesheet" href="./assess/vendors/aos/aos.css" />
         <link rel="icon" type="access/png" href="assess/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -45,9 +45,7 @@
             <form class="community-form-input">
                 <p>
                     <input type="search" name="search" placeholder="Search">
-                    <span class="search-icon">
-                        <i class="fa fa-search icon-search-community" aria-hidden="true"></i>
-                    </span>
+                    <span class="search-icon"><i class="fa fa-search icon-search-community" aria-hidden="true"></i></span>
                     <button class="lettalk-button">Let’s talk</button>
                 </p>
             </form>
@@ -57,46 +55,48 @@
                 <!--Community profile new flex starts here-->
                 <div class="community-profile-news-flex">
                     <!--community profile news userprofile starts here-->
-                    <div class="community-profile-news-userprofile">
-                        <div class="community-profile-news-userprofile-section">
-                            <img src=""><span>Active</span>
+                    <div class="community-profile-news-flex">
+                        <!--community profile news userprofile starts here-->
+                        <div class="community-profile-news-userprofile">
+                            <div class="community-profile-news-userprofile-section">
+                                <img src=""><span>Active</span>
+                            </div>
+                            <p class="community-user-name-profile">Yemi Fatou</p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/profile.svg">
+                                <a href="profile.html" class="community-profile-text-link-list">View profile</a>
+                            </p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/notification.svg">
+                                <a href="" class="community-profile-text-link-list">Notifications</a>
+                            </p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/question.svg">
+                                <a href="community.html" class="community-profile-text-link-list">All questions</a>
+                            </p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/answer.svg">
+                                <a href="post.html" class="community-profile-text-link-list">Answered</a>
+                            </p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/unsolve.svg">
+                                <a href="" class="community-profile-text-link-list">Unsolved</a>
+                            </p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/solve.svg">
+                                <a href="" class="community-profile-text-link-list">Solved</a>
+                            </p>
+                            <p class="community-profile-text-link">
+                                <img src="./assess/setting.svg">
+                                <a href="" class="community-profile-text-link-list">Settings</a>
+                            </p>
+                            <form class="log-out-form">
+                                <button>
+                                    <img src="./assess/logout.svg">
+                                    <span>Log out</span>
+                                </button>
+                            </form>
                         </div>
-                        <p class="community-user-name-profile">Yemi Fatou</p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/profile.svg">
-                            <a href="profile.html" class="community-profile-text-link-list">View profile</a>
-                        </p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/notification.svg">
-                            <a href="" class="community-profile-text-link-list">Notifications</a>
-                        </p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/question.svg">
-                            <a href="community.html" class="community-profile-text-link-list">All questions</a>
-                        </p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/answer.svg">
-                            <a href="post.html" class="community-profile-text-link-list">Answered</a>
-                        </p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/unsolve.svg">
-                            <a href="" class="community-profile-text-link-list">Unsolved</a>
-                        </p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/solve.svg">
-                            <a href="" class="community-profile-text-link-list">Solved</a>
-                        </p>
-                        <p class="community-profile-text-link">
-                            <img src="./assess/setting.svg">
-                            <a href="" class="community-profile-text-link-list">Settings</a>
-                        </p>
-                        <form class="log-out-form">
-                            <button>
-                                <img src="./assess/logout.svg">
-                                <span>Log out</span>
-                            </button>
-                        </form>
-                    </div>
                     <!--community profile news userprofile ends here-->
                     <div class="community-profile-news-filters" id="community-profile-news-filters">
                         <ul id="community-filter" class="community-filters-section">
@@ -104,64 +104,79 @@
                             <li data-filter="Latest">Latest</li>
                             <li data-filter="Popular">Popular</li>
                         </ul>
-                        <div class="community-filters-section-array" id="community-filters-section-array">
+                        <div class="community-filters-section-array answered-filters-section-array" id="community-filters-section-array">
                             <div class="community-filters-section-list" data-filter="Popular">
-                                <div class="community-filters-section-list-profile">
-                                    <img class="community-filters-section-list-profile-img" src="">
-                                    <div class="community-filters-section-list-profile-flex">
-                                        <p class="community-filters-section-list-profile-name">Emily Temi</p>
-                                        <p class="community-filters-section-list-profile-time">3 mins ago</p>
+                                <div class="community-filters-section-list-profile answered-filters-section-list-profile">
+                                    <div class="answered-filters-section-list-profile-flex">
+                                        <img class="community-filters-section-list-profile-arrow" src="./assess/comarrow.svg">
+                                        <img class="community-filters-section-list-profile-img" src="">
+                                        <div class="community-filters-section-list-profile-flex">
+                                            <p class="community-filters-section-list-profile-name">Clara Ade</p>
+                                            <p class="community-filters-section-list-profile-time">2 hrs ago</p>
+                                        </div>
                                     </div>
+                                    <img src="./assess/more.svg">
                                 </div>
-                                <p class="community-filters-section-list-comment">Hi there! I'm a new mom and I'm curious 
-                                    about what type of activities I should be doing with my baby. Are there any tips 
-                                    for encouraging healthy development?
+                                <p class="answered-filters-section-list-comment">I have a newborn and a toddler. 
+                                    I am wondering how i can manage to adequately care for my children and myself. 
+                                    I have enlisted a nanny to help me out but i am feeling like i am not a good mom. 
+                                    Help!
                                 </p>
-                                <div class="community-filters-section-list-links">
-                                    <a href="#">Replies</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Report</a>
+                                <div class="answered-filters-section-list-replies">
+                                    <p>Lara and 44 others commented</p>
+                                    <p class="answered-filters-section-list-replies-links"><span>12</span> Shared</p>
+                                    <p class="answered-filters-section-list-replies-links"><span></span>Report</p>
                                 </div>
-                            </div>
-                            <div class="community-filters-section-list" data-filter="Latest">
-                                <div class="community-filters-section-list-profile">
-                                    <img class="community-filters-section-list-profile-img" src="">
-                                    <div class="community-filters-section-list-profile-flex">
-                                        <p class="community-filters-section-list-profile-name">Zoe Lola</p>
-                                        <p class="community-filters-section-list-profile-time">1 hr ago</p>
+                                <form class="answered-filters-section-list-links">
+                                    <button><img src="./assess/like.svg">Like</button>
+                                    <button class="comment-button"><img src="./assess/cooment.svg">Comment</button>
+                                    <button><img src="./assess/repost.svg">Report</button>
+                                    <button><img src="./assess/send.svg">Send</button>
+                                </form>
+                                <div class="answered-filters-section-list">
+                                    <div class="answered-filters-section-list-profile">
+                                        <div class="answered-filters-section-list-profile-flex">
+                                            <img class="community-filters-section-list-profile-img" src="">
+                                            <div class="community-filters-section-list-profile-flex">
+                                                <p class="community-filters-section-list-profile-name">Emily Temi</p>
+                                                <p class="community-filters-section-list-profile-time">Now</p>
+                                            </div>
+                                        </div>
+                                        <img src="./assess/more2.svg">
                                     </div>
+                                    <p class="answered-filters-section-list-comment">Being a mom is the one thing 
+                                        that can make you feel like you are falling apart
+                                        one minute and totally together the next. Perhaps this is what the elusive 
+                                        balance in motherhood actually looks like in real time?
+                                    </p>
+                                    <form class="answered-comment-filters-section-list-links">
+                                        <button class="like-comment-button"><img src="./assess/like.svg">Like</button>
+                                        <button class="comment-button"><img src="./assess/cooment.svg">Reply</button>
+                                    </form>
                                 </div>
-                                <p class="community-filters-section-list-comment">Hi there! I'm a parent and I'm trying to 
-                                    figure out the best way to care for my baby. I'm wondering when is the best 
-                                    time to start introducing solid foods?
-                                </p>
-                                <div class="community-filters-section-list-links">
-                                    <a href="#">Replies</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Report</a>
-                                </div>
-                            </div>
-                            <div class="community-filters-section-list" data-filter="Latest">
-                                <div class="community-filters-section-list-profile">
-                                    <img class="community-filters-section-list-profile-img" src="">
-                                    <div class="community-filters-section-list-profile-flex">
-                                        <p class="community-filters-section-list-profile-name">Clara Ade</p>
-                                        <p class="community-filters-section-list-profile-time">2 hrs ago</p>
+                                <div class="answered-reply-reply-filters-section-list">
+                                    <div class="answered-filters-section-list-profile">
+                                        <div class="answered-filters-section-list-profile-flex">
+                                            <img class="community-filters-section-list-profile-img" src="">
+                                            <div class="community-filters-section-list-profile-flex">
+                                                <p class="community-filters-section-list-profile-name">Ope Becky</p>
+                                                <p class="community-filters-section-list-profile-time">Now</p>
+                                            </div>
+                                        </div>
+                                        <img src="./assess/more2.svg">
                                     </div>
-                                </div>
-                                <p class="community-filters-section-list-comment">Hi there! I'm a parent and I'm trying to 
-                                    figure out the best way to care for my baby. I'm wondering when is the best time to 
-                                    start introducing solid foods?
-                                </p>
-                                <div class="community-filters-section-list-links">
-                                    <a href="#">Replies</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Report</a>
+                                    <p class="answered-filters-reply-section-list-comment"> Clara Ade that’s what makes being 
+                                        a mom so damn beautiful
+                                    </p>
+                                    <form class="answered-comment-filters-section-list-links">
+                                        <button class="like-comment-button"><img src="./assess/like.svg">Like</button>
+                                        <button class="comment-button"><img src="./assess/cooment.svg">Reply</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <form class="community-filters-section-array-button">
-                            <button>View more questions</button>
+                        <form class="answered-filters-section-array-button">
+                            <button>New replies</button>
                         </form>
                     </div>
                     <!--ask a question tags starts here-->
