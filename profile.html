@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>View Profile</title>
-        <link rel="stylesheet" href="./assess/vendors/aos/aos.css" />
+        <link rel="stylesheet" href="./assess/vendors/aos/aos.css"/>
         <link rel="icon" type="access/png" href="assess/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -66,7 +66,7 @@
                         </p>
                         <p class="community-profile-text-link">
                             <img src="./assess/notification.svg">
-                            <a href="" class="community-profile-text-link-list">Notifications</a>
+                            <a href="profile.html" class="community-profile-text-link-list">Notifications</a>
                         </p>
                         <p class="community-profile-text-link">
                             <img src="./assess/question.svg">
@@ -97,11 +97,17 @@
                     </div>
                     <!--community profile news userprofile ends here-->
                     <div class="profile-profile-news-filters" id="profile-profile-news-filters">
-                        <ul id="profile-filter" class="profile-filters-section">
+                        <!--<ul id="profile-filter" class="profile-filters-section">
                             <li class="list-margin-right" data-filter="Viewprofile" class="active">View profile</li>
                             <li class="list-margin-right" data-filter="Notifications">Notifications</li>
                             <li class="list-margin-right" data-filter="Settings">Settings</li>
                             <li data-filter="Privacypolicy">Privacy policy</li>
+                        </ul>-->
+                        <ul id="profile-filter" class="profile-filters-section">
+                            <li><a href="profile.html" class="current-cat" data-filter="">View profile</a></li>
+                            <li><a href="otherprofile.html#notification" data-filter="">Notification</a></li>
+                            <li><a href="otherprofile.html#setting" data-filter="">Settings</a></li>
+                            <li><a href="otherprofile.html#privacy" data-filter="">Privacy policy</a></li>
                         </ul>
                         <div class="profile-profile-news-filters-section" data-filter="Viewprofile">
                             <p class="profile-profile-news-filters-section-text">Your Profile  Picture</p>
@@ -204,8 +210,16 @@
             <i class="fas fa-arrow-up rounded-circle shadow"></i>
         </div>
         <!--script-->
-        <script src="./assess/vendors/jquery/jquery3.9.0.min.js"></script>
+        <!--<script src="./assess/vendors/jquery/jquery3.9.0.min.js"></script>
         <script src="./assess/vendors/aos/aos.js"></script>
-        <script src="./script/script.js"></script>
+        <script src="./script/script.js"></script>-->
+        <script>
+            var hash = window.location.hash;
+            hash = hash.split("#");
+            hash = hash[1];
+            var posts = $('.post');
+            posts.hide();
+            $("#" + hash ).show();
+        </script>
     </body>
 </html>

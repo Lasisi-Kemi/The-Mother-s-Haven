@@ -21,13 +21,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="header fixed-top">
+        <!--<header class="header fixed-top">
             <div class="max_width">
                 <nav class="nav-bar-tmh">
                     <a href="index.html">
-                        <div class="nav-bar-tmh-logpc">
+                        <div class="nav-bar-tmh-logpc">-->
                             <!--<p><a href="index.html">THE MOTHER’S <span>HAVEN</span></a></p>-->
-                        </div>
+                        <!--</div>
                     </a>
                     <div class="nav-bar-tmh-links">
                         <ul>
@@ -174,9 +174,200 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section>-->
+          <header class="header fixed-top">
+            <div class="max_width">
+                <nav class="nav-bar-tmh">
+                    <a href="index.html">
+                        <div class="nav-bar-tmh-logpc">
+                            <!--<p><a href="index.html">THE MOTHER’S <span>HAVEN</span></a></p>-->
+                        </div>
+                    </a>
+                    <div class="nav-bar-tmh-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="login.html">Community</a></li>
+                            <li><a href="index.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <p class="nav-bar-tmh-links-signup"><a href="signup.html">Sign Up</a></p>
+                </nav>
+            </div>
+        </header>
+        <!--Header ends here-->
+       <section class="communitySection">
+        <div class="max_width">
+            <!--Search section starts here-->
+            <form class="community-form-input">
+                <p>
+                    <input type="search" name="search" placeholder="Search">
+                    <span class="search-icon"><i class="fa fa-search icon-search-community" aria-hidden="true"></i></span>
+                    <button class="lettalk-button">Let’s talk</button>
+                </p>
+            </form>
+            <!--Search section ends here-->
+            <!---community profile news starts here-->
+            <div class="community-profile-news">
+                <!--Community profile new flex starts here-->
+                <div class="community-profile-news-flex">
+                    <!--community profile news userprofile starts here-->
+                    <div class="community-profile-news-userprofile">
+                        <div class="community-profile-news-userprofile-section">
+                            <img src=""><span>Active</span>
+                        </div>
+                        <p class="community-user-name-profile">Yemi Fatou</p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/profile.svg">
+                            <a href="profile.html" class="community-profile-text-link-list">View profile</a>
+                        </p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/notification.svg">
+                            <a href="" class="community-profile-text-link-list">Notifications</a>
+                        </p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/question.svg">
+                            <a href="community.html" class="community-profile-text-link-list">All questions</a>
+                        </p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/answer.svg">
+                            <a href="post.html" class="community-profile-text-link-list">Answered</a>
+                        </p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/unsolve.svg">
+                            <a href="" class="community-profile-text-link-list">Unsolved</a>
+                        </p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/solve.svg">
+                            <a href="" class="community-profile-text-link-list">Solved</a>
+                        </p>
+                        <p class="community-profile-text-link">
+                            <img src="./assess/setting.svg">
+                            <a href="" class="community-profile-text-link-list">Settings</a>
+                        </p>
+                        <form class="log-out-form">
+                            <button>
+                                <img src="./assess/logout.svg">
+                                <span>Log out</span>
+                            </button>
+                        </form>
+                    </div>
+                    <!--community profile news userprofile ends here-->
+                    <div class="profile-profile-news-filters" id="profile-profile-news-filters">
+                      <ul id="profile-filter" class="profile-filters-section">
+                        <li><a href="test.html" class="current-cat" data-filter="">View profile</a></li>
+                        <li><a href="test_a.html#wandelingen" data-filter="">Notification</a></li>
+                        <li><a href="test_a.html#rondleidingen" data-filter="">Setting</a></li>
+                        <li><a href="test_a.html#groepsarrangementen" data-filter="">Privacy policy</a></li>
+                      </ul>
+                        <div class="profile-profile-news-filters-section" data-filter="Viewprofile">
+                            <p class="profile-profile-news-filters-section-text">Your Profile  Picture</p>
+                            <div>
+                                <form class="profile-profile-news-filters-section-text-form">
+                                    <div class="profile-profile-news-filters-section-text-form-img">
+
+                                    </div>
+                                    <div class="profile-profile-news-filters-section-text-form-button">
+                                        <button class="change-button">Change picture</button>
+                                        <button class="delete-button">Delete picture</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <form class="profile-profile-news-filters-section-forms">
+                                <div class="profile-profile-news-filters-section-forms-flex">
+                                    <p><span>First name</span> <br>
+                                        <input type="text" name="firstname">
+                                    </p>
+                                    <p><span>Last name</span> <br>
+                                        <input type="text" name="lasttname">
+                                    </p>
+                                </div>
+                                <p class="profile-profile-news-filters-section-forms-input"><span>E-mail</span> <br>
+                                    <input type="email" name="email"> 
+                                </p>
+                                <p class="profile-profile-news-filters-section-forms-textarea"><span>Bio</span> <br>
+                                    <textarea>Introduce yourself!</textarea>
+                                </p>
+                                <div class="profile-profile-news-filters-section-text-form-button-b">
+                                    <button class="update-profile-button">Update profile</button>
+                                    <button class="reset-profile-button">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--ask a question tags starts here-->
+                    <div class="ask-a-question-tags">
+                        <div class="ask-a-question-tags-member">
+                            <div class="ask-a-question-tags-member-flex">
+                                <img src="./assess/period.svg">
+                                <span class="ask-a-question-tags-member-flex-text online-active-color">online</span>
+                            </div>
+                            <p class="population-of-members ask-a-question-tags-member-flex-text">8,560 members</p>
+                        </div>
+                    </div>
+                    <!--ask a question tags ends here-->
+                </div>
+            </div>
+        </div>
+       </section>
+        <footer class="footer">
+            <div class="max_width">
+                <div class="footer-flex-content">
+                    <div class="footer-flex-content-one">
+                        <a href="index.html"><div class="footer-flex-content-one-logo">
+                            
+                        </div></a>
+                        <div class="footer-flex-content-one-text">
+                            <p class="footer-flex-content-one-text-one">The Mother’s Haven offers a range of resources to help mother and child find the best 
+                                care for their needs.
+                            </p>
+                            <p class="footer-flex-content-one-text-two">Copyright &copy 2023 The Mother’s Haven Inc.</p>
+                        </div>
+                    </div>
+                    <div class="footer-flex-content-links">
+                        <p class="footer-flex-content-links-headers"><a href="index.html">ABOUT US</a></p>
+                        <p><a href="blog.html">Our Blog</a></p>
+                        <p><a href="login.html">Join Community</a></p>
+                        <p><a href="#">Speak to Experts</a></p>
+                        <p><a href="#">Terms of Use</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                    </div>
+                    <div class="footer-flex-content-links">
+                        <p class="footer-flex-content-links-headers"><a href="blog.html">BLOG POSTS</a></p>
+                        <p><a href="postpartum.html">Postpartum Care</a></p>
+                        <p><a href="#">Parenting</a></p>
+                        <p><a href="babycare.html">Childcare</a></p>
+                        <p><a href="nutrition.html">Nutrition</a></p>
+                        <p><a href="fitness.html">Fitness and Diet</a></p>
+                        <p><a href="#">Child Health</a></p>
+                        <p><a href="#">Mother Health</a></p>
+                    </div>
+                    <div class="footer-flex-content-links" id="contactus">
+                        <p class="footer-flex-content-links-headers"><a href="index.html">Connect with Us</a></p>
+                        <p><a href="tel:+2348123498576">+(234)8123498576</a></p>
+                        <p><a href="tel:+2348022453363">+(234)8022453363</a></p>
+                        <p><a href="mailto:themothershaven@gmail.com">themothershaven@gmail.com</a></p>
+                        <div class="footer-flex-content-links-flex">
+                            <p><a href="#"><img src="./assess/facebook.svg"></a></p>
+                            <p><a href="#"><img src="./assess/twitter.svg"></a></p>
+                            <p><a href="#"><img src="./assess/instagram.svg"></a></p>
+                            <p><a href="#"><img src="./assess/linkedIn.svg"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <div id="backToTop">
             <i class="fas fa-arrow-up rounded-circle shadow"></i>
         </div>
+        <script>
+          var hash = window.location.hash;
+              hash = hash.split("#");
+              hash = hash[1];
+              var posts = $('.post');
+              posts.hide();
+              $("#" + hash ).show();
+      </script>
     </body>
 </html>

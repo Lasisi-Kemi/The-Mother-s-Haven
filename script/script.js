@@ -3,7 +3,10 @@ let changeColor;
 let selectedInterest = [];
 let selectedProfile = [];
 let backToTop;
+let askQuestion;
+let slider;
 
+//Animation
 window.addEventListener('load', () => {
     AOS.init({
      offset: 120, // offset (in px) from the original trigger point
@@ -14,6 +17,11 @@ window.addEventListener('load', () => {
      mirror: true,
     });
   });
+//animation ends here
+
+window.onload = function() {
+    document.getElementById('privacy-pop').style.display = 'block';
+}
 
 function myInterest(added) {
     if(selectedInterest.includes(added)) {
@@ -31,6 +39,7 @@ function myInterest(added) {
         }
     }   
 }
+
 
 
 /*backtotop */
@@ -92,39 +101,9 @@ for(let i=0; i<communityFilters.length; i++) {
         
         AOS.refresh()
     });
-}
+};
 
-jQuery('#community-filters-section-array').css("overflow-y", "scroll");
-
-
-let profileFilters = document.querySelectorAll('#profile-filter li'); 
-let profileGallery = document.querySelectorAll('#profile-profile-news-filters .profile-filters-section-array .profile-filters-section-list'); 
-for(let i=0; i<profileFilters.length; i++) {
-    profileFilters[i].addEventListener('click', function(c) {
-        c.preventDefault();
-        for(let j=0; j<profileFilters.length; j++) {
-            profileFilters[j].classList.remove("active")
-        }
-        profileFilters[i].classList.add("active")
-        let dataFilter = profileFilters[i].getAttribute("data-filter")
-        for(let k=0; k<profileGallery.length; k++) {
-            if(dataFilter === "*") {
-                profileGallery[k].style.display = "flex"
-                profileGallery[k].style.flexDirection = "column" 
-            }
-            else if(profileGallery[k].getAttribute("data-filter") === dataFilter) {
-                //console.log("hmm")
-                profileGallery[k].style.display = "flex"
-                profileGallery[k].style.flexDirection = "column"
-            }
-            else {  
-                profileGallery[k].style.display = "none"   
-            }
-        }
-        
-        AOS.refresh()
-    });
-}
+//jQuery('#community-filters-section-array').css("overflow-y", "scroll");
 
 /*function myInterest(val) {
     if (selectedInterest.includes(val)){
@@ -151,3 +130,32 @@ window.addEventListener('scroll', () => {
       navbar.classList.remove("scrolled")
   }
 })
+
+
+//privacy pop up
+document.getElementById('privacy-acknowledge').addEventListener('click', function() {
+    document.getElementById('privacy-popup').style.display = 'none'
+})
+/*privacy pop up ends here*/
+
+function askQuestionPrompt(){
+    prompt('Share with us')
+}
+
+function notificationButton() {
+    if (this.value === '1') {
+        // turn on notification
+      } else {
+        // turn off notification
+      };
+}
+
+function setUp () {
+    askQuestion = document.querySelector('.ask-a-question-tags-questions');
+    slider = document.querySelector('.slider');
+
+    askQuestion.addEventListener('click', askQuestionPrompt);
+    slider.addEventListener('input', notificationButton)
+}
+
+setUp();
