@@ -39,7 +39,7 @@
             </div>
         </header>
         <!--Header ends here-->
-       <section class="communitySection" style="margin-top: 100px; background: #FCFCFC;">
+       <section class="communitySection">
         <div class="max_width">
             <!--Search section starts here-->
             <form class="community-form-input">
@@ -66,7 +66,7 @@
                         </p>
                         <p class="community-profile-text-link">
                             <img src="./assess/notification.svg">
-                            <a href="profile.html" class="community-profile-text-link-list">Notifications</a>
+                            <a href="otherprofile.html#notification" class="community-profile-text-link-list">Notifications</a>
                         </p>
                         <p class="community-profile-text-link">
                             <img src="./assess/question.svg">
@@ -86,7 +86,7 @@
                         </p>
                         <p class="community-profile-text-link">
                             <img src="./assess/setting.svg">
-                            <a href="" class="community-profile-text-link-list">Settings</a>
+                            <a href="otherprofile.html#setting" class="community-profile-text-link-list">Settings</a>
                         </p>
                         <form class="log-out-form">
                             <button>
@@ -111,7 +111,7 @@
 
                                     </div>
                                     <div class="profile-profile-news-filters-section-text-form-button">
-                                        <button class="change-button">Change picture</button>
+                                        <input class="change-button" type="file" placeholder="Change picture">
                                         <button class="delete-button">Delete picture</button>
                                     </div>
                                 </form>
@@ -204,16 +204,8 @@
             <i class="fas fa-arrow-up rounded-circle shadow"></i>
         </div>
         <!--script-->
-        <!--<script src="./assess/vendors/jquery/jquery3.9.0.min.js"></script>
+        <script src="./assess/vendors/jquery/jquery3.9.0.min.js"></script>
         <script src="./assess/vendors/aos/aos.js"></script>
-        <script src="./script/script.js"></script>-->
-        <script>
-            var hash = window.location.hash;
-            hash = hash.split("#");
-            hash = hash[1];
-            var posts = $('.post');
-            posts.hide();
-            $("#" + hash ).show();
-        </script>
+        <script src="./script/script.js"></script>
     </body>
 </html>

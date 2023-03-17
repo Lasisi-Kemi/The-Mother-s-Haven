@@ -84,11 +84,14 @@ body  * {
 }
 
 .nav-bar-tmh-links ul {
-    width: 431px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-list {
+    margin-right: 32px;
 }
 
 .nav-bar-tmh-links a {
@@ -99,6 +102,20 @@ body  * {
     line-height: 22px;
     letter-spacing: 0em;
     color: var(--blackcolor);
+}
+
+.nav-bar-tmh-links li a.current {
+    color: var(--mothercolor);
+    background-color: #E22929;
+    font-weight: 700px;
+}
+
+.nav-bar-tmh-links li a:hover {
+    color: var(--mothercolor);
+}
+
+.active {
+    color: var(--mothercolor);
 }
 
 .nav-bar-tmh-links-signup {
@@ -400,7 +417,8 @@ body  * {
 
 .containere {
     background-color: var(--sectionc);
-    padding: 116px 0px 58px 0px;
+    padding: 13px 0px 40px 0px;
+    font-family: var(--fontfamily);
 }
 
 .container-e-medical-text {
@@ -418,7 +436,6 @@ body  * {
 }
 
 .container-e-medical-text-two {
-    height: 67px;
     width: 1021px;
     margin: 0px auto;
     font-family: var(--fontfamily2);
@@ -429,87 +446,112 @@ body  * {
 }
 
 .container-e-medical-container {
-    margin-top: 116px;
+    padding-top: 80px;
+}
+
+.container-e-medical-doctors {
+    display: flex;
+}
+
+.container-e-medical-practitioner {
+    width: 292px;
+    margin-right: 24px;
+}
+
+.container-e-medical-practitioner-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 284px;
+    width: 292px;
+}
+
+.container-e-medical-practitioner-bgone {
+    background-image: url(../assess/doc1.png);
+}
+
+.container-e-medical-practitioner-bgtwo {
+    background-image: url(../assess/doc2.png);
+}
+
+.container-e-medical-practitioner-bgthree {
+    background-image: url(../assess/doc3.png);
+}
+
+.container-e-medical-practitioner-bgfour {
+    background-image: url(../assess/doc4.png);
+}
+
+.container-e-medical-practitioner-bgfive {
+    background-image: url(../assess/doc5.png);
+}
+
+.container-e-medical-practitioner-bgsix {
+    background-image: url(../assess/doc6.png);
+}
+
+.container-e-medical-practitioner-bgseven {
+    background-image: url(../assess/doc3.png);
+}
+
+.container-e-medical-practitioner-detail-textone {
+    margin: 16px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.container-e-medical-practitioner-detail-texttwo {
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.container-e-medical-practitioner-detail-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.container-e-medical-flex-container {
-    margin-bottom: 68px;
-    display: flex;
-    flex-direction: column;
-    color: var(--graycolor);
+.container-e-medical-practitioner-detail-buttons a {
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    
+    text-decoration: none;
 }
 
-.container-e-medical-flex-container-flex {
-    display: flex;
+.view-profile-detail-buttons {
+    width: 135px; 
+    padding: 14.5px 0px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(13, 110, 253, 1);
+    border: 1px solid #0D6EFD;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.container-e-medical-flex-container-flex-one {
-    height: 109px;
-    width: 109px;
-    border-radius: 100%;
+.book-now-detail-buttons {
+    width: 135px; 
+    padding: 14.5px 0px;
+    background-color: rgba(13, 110, 253, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.box-radius {
-    margin-top: 68px;
-}
-
-.radius-1 {
-    background-image: url(../assess/Ellipse\ 169.png);
-    background-size: cover;
-}
-
-.radius-2 {
-    background-image: url(../assess/Ellipse\ 171.png);
-    background-size: cover;
-}
-
-.radius-3 {
-    background-image: url(../assess/Ellipse\ 173.png);
-    background-size: cover;
-}
-
-.radius-4 {
-    background-image: url(../assess/Ellipse\ 170.png);
-    background-size: cover;
-}
-
-.radius-5 {
-    background-image: url(../assess/Ellipse\ 172.png);
-    background-size: cover;
-}
-
-.radius-6 {
-    background-image: url(../assess/Ellipse\ 174.png);
-    background-size: cover;
-}
-
-.container-e-medical-flex-container-flex-two {
-    padding-left: 16px;
-    align-self: center;
-}
-
-.container-e-medical-flex-container-flex-two-one {
-    font-family: var(--fontfamily2);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-}
-
-.container-e-medical-flex-container-flex-two-two {
-    font-family: var(--fontfamily2);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.05em;
-}
 /*medical advisory section ends here */
 /*join our community section starts here */
 
 .containerf {
-    padding: 115.85px 0px 127px;
+    padding: 115.85px 0px 59px 0px;
     text-align: center;
     color: var(--graycolor);
 }
@@ -812,6 +854,22 @@ body  * {
     letter-spacing: 0.05em;
 }
 
+.loginflex-forget-password {
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginflex-forget-password a {
+    text-decoration: none;
+    font-family: var(--fontfamily);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: rgba(170, 49, 105, 1);
+}
+
 .loginflex-one-form-button button {
     background-color: var(--signuptextcolor);
     color: var(--whitecolor);
@@ -974,18 +1032,22 @@ body  * {
 }
 
 .blog-form-input input{
-    background-color: transparent;
+    background-color: rgba(252, 252, 252, 1);
     width: 560.4519653320312px;
     padding: 18.12px 10.02px 18.12px 20.02px;
     border-radius: 8px;
     outline: none;
-    border: 1.5px solid var(--graycolor2);
-    color: var(--graycolor2);
+    border: none;
+    color: rgba(20, 16, 16, 1);
     font-family: var(--fontfamily);
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
+}
+
+.blog-form-input ::placeholder {
+    color: rgba(20, 16, 16, 1);
 }
 
 .blog-form-input span {
@@ -997,7 +1059,7 @@ body  * {
 }
 
 .icon-search {
-    color: var(--whitecolor);
+    color: rgba(20, 16, 16, 1);
 }
 
 .new-updates-section {
@@ -2726,10 +2788,19 @@ body  * {
 }
 
 .change-button {
-    background-color: rgba(13, 110, 253, 1);
+    /*background-color: rgba(13, 110, 253, 1);*/
+    background-color: transparent;
+    width: 186px;
     margin-bottom : 26px;
-    border: none;
-    color: rgba(255, 255, 255, 1);
+    padding: 12px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;   
+    color: rgba(13, 110, 253, 1);
+    border: 1px solid #0D6EFD;
+    /*color: rgba(255, 255, 255, 1);*/
 }
 
 .delete-button {
@@ -2839,6 +2910,7 @@ body  * {
 }
 
 .privacy-button-div {
+    margin: 30px 0px;
     text-align: center;
 }
 
@@ -3181,4 +3253,364 @@ body  * {
     letter-spacing: 0em;
     color: rgba(226, 41, 41, 1);
     border: 1px solid #E22929;
+}
+
+/*booking starts here */
+
+.booking {
+    background-color: rgba(252, 252, 252, 1);
+}
+
+.booking-section-container {
+    padding: 83px 0px;
+    font-family: var(--fontfamily);
+}
+
+.booking-section-container-textone {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(20, 16, 16, 1);
+}
+
+.booking-section-container-texttwo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.booking-section-container-booking {
+    margin-top: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-section-container-booking-flex {
+    width: 370px;
+    padding: 12px 21.5px;
+    border: 1px solid #0D6EFD;
+}
+
+.booking-section-container-booking-flex-one {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(20, 16, 16, 1);
+}
+
+.booking-section-container-booking-flex-two {
+    margin: 20px 0px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(20, 16, 16, 1);
+}
+
+.booking-form-section-flex {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.booking-form-section-flex span {
+    width: 286px;
+    margin-left: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.booking-form-section-button {
+    text-align: center;
+}
+
+.booking-form-section-button button {
+    background-color: rgba(255, 255, 255, 1);
+    width: 132px;
+    padding: 12px 0px;
+    font-family: var(--fontfamily2);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(13, 110, 253, 1);
+    border-radius: 4px;
+    border: 1px solid #0D6EFD;
+}
+
+/*booking ends here */
+.doctorEbby {
+    margin-top: 100px;
+    font-family: var(--fontfamily);
+}
+
+.doctor-Ebby-Bukola {
+    padding-top: 37px;
+    display: flex;
+}
+
+.doctor-Ebby-Bukola-booking {
+    background-color: rgba(207, 226, 255, 0.5);
+    width: 426px;
+    height: 430px;
+    padding: 12px 16px;
+    margin-right: 46px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(78, 103, 139, 0.5);
+    text-align: center;
+}
+
+.doctor-Ebby-Bukola-booking-heading {
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-booking select {
+    background-color: rgba(252, 252, 252, 1);
+    width: 324px;
+    margin-bottom: 28px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(79, 79, 79, 1);
+    outline: none;
+    border: none;
+}
+
+.doctor-Ebby-Bukola-booking-headingtwo {
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.doctor-Ebby-Bukola-booking-input {
+    width: 324px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctor-Ebby-Bukola-booking-input input {
+    background-color: rgba(252, 252, 252, 1);
+    padding: 12px 13px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    letter-spacing: 0.02em;
+    color: rgba(79, 79, 79, 1);
+    outline: none;
+    border: none;
+}
+
+.doctor-Ebby-Bukola-booking-button {
+    margin: 28px 0px 20px 0px;
+    text-align: center;
+}
+
+.doctor-Ebby-Bukola-booking-button button {
+    background-color: rgba(255, 103, 174, 1);
+    width: 374px;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    border: none;
+}
+
+.doctor-Ebby-Bukola-profile-info {
+    display: flex;
+}
+
+.doctor-Ebby-Bukola-profile-info-bg {
+    background-image: url(../assess/doc1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 287px;
+    width: 281px;
+}
+
+.doctor-Ebby-Bukola-profile-info-details {
+    margin-left: 37px;
+}
+
+.doctor-Ebby-Bukola-profile-info-details-one {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 0.9);
+}
+
+.doctor-Ebby-Bukola-profile-info-details-two {
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(79, 79, 79, 0.9);
+}
+
+.doctor-Ebby-Bukola-profile-info-details-three {
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.doctor-Ebby-Bukola-profile-info-details-three span {
+    margin-left: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact {
+    margin-top: 20px;
+}
+
+.doctor-Ebby-Bukola-fact-links {
+    margin-bottom: 15px;
+}
+
+.doctor-Ebby-Bukola-fact-links-one {
+    margin-right: 58px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(13, 110, 253, 1);
+}
+
+.doctor-Ebby-Bukola-fact-links-two {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.doctor-Ebby-Bukola-fact-list ul {
+    margin-bottom: 20px;
+    width: 787px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 0.85);
+}
+
+.doctor-Ebby-Bukola-fact-eng {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang-details {
+    width: 821px;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang-details p {
+    margin-bottom: 20px;
+}
+
+.doctor-Ebby-Bukola-fact-lang-faqs-headings {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang-faqs-headingsone {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 16, 16, 0.85);
+}
+
+.doctor-Ebby-Bukola-fact-lang-faqs-text {
+    margin: 8px 0px 20px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang-faqs-appointment {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang-faqs-appointment ol {
+    margin: 12px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: rgba(79, 79, 79, 1);
+}
+
+.doctor-Ebby-Bukola-fact-lang-faqs-required {
+    margin: 8px 0px 90px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(79, 79, 79, 1);
 }

@@ -19,9 +19,16 @@ window.addEventListener('load', () => {
   });
 //animation ends here
 
-window.onload = function() {
-    document.getElementById('privacy-pop').style.display = 'block';
-}
+// Get all navigation links
+let navLinks = document.querySelectorAll('.navigation-links');
+navLinks.forEach(function(navLink) {
+  navLink.addEventListener('click', function() {
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
 
 function myInterest(added) {
     if(selectedInterest.includes(added)) {
@@ -39,8 +46,6 @@ function myInterest(added) {
         }
     }   
 }
-
-
 
 /*backtotop */
 
@@ -61,17 +66,6 @@ backToTop.addEventListener("click", () => {
 })
 
 /* backtotop ends here */
-
-/*let navbar = document.querySelector('#nav');
-  window.addEventListener('scroll', () => {
-    let position = window.scrollY
-    if(position > 69) {
-        navbar.classList.add("scrolled")
-    }
-    else {
-        navbar.classList.remove("scrolled")
-    }
-})*/
 
 
 let communityFilters = document.querySelectorAll('#community-filter li'); 
@@ -105,41 +99,19 @@ for(let i=0; i<communityFilters.length; i++) {
 
 //jQuery('#community-filters-section-array').css("overflow-y", "scroll");
 
-/*function myInterest(val) {
-    if (selectedInterest.includes(val)){
-        delete selectedInterest[selectedInterest.indexOf(val)]
-        selectedInterest.length = selectedInterest.length - 1
-        let changeColor = document.getElementById(`interest-${val}`);
-            changeColor.style.backgroundColor = "#ffffff";
-    } else {
-        if( selectedInterest.length < 5){
-           let changeColor = document.getElementById(`interest-${val}`);
-            changeColor.style.backgroundColor = "#00FF00";
-            selectedInterest.push(val)
-        }
-    }
-}*/
-
-let navbar = document.querySelector('#nav');
-window.addEventListener('scroll', () => {
-  let position = window.scrollY
-  if(position > 69) {
-      navbar.classList.add("scrolled")
-  }
-  else {
-      navbar.classList.remove("scrolled")
-  }
-})
-
 
 //privacy pop up
+window.onload = function() {
+    document.getElementById('privacy-pop').style.display = 'block';
+}
+
 document.getElementById('privacy-acknowledge').addEventListener('click', function() {
     document.getElementById('privacy-popup').style.display = 'none'
 })
 /*privacy pop up ends here*/
 
 function askQuestionPrompt(){
-    prompt('Share with us')
+    prompt('Share with us');
 }
 
 function notificationButton() {
